@@ -282,6 +282,7 @@ elif selected == "Projects":
 
         This project showcases my skills in data visualization and strategic insights.
         """)
+    
     elif selected2 == "SQL":
         
         
@@ -321,7 +322,7 @@ elif selected == "Projects":
                 col1, col2 = st.columns(2)
                 with col1:
                     
-                    st.write("1. Food Delivery Status Classification with Xg BOOST and Streamlit ")
+                    st.write("**1. Food Delivery Status Classification with Xg BOOST and Streamlit** ")
                     #st.write("----")
                     st.video(r"Food.mp4")
                     st.write("---")
@@ -349,7 +350,7 @@ elif selected == "Projects":
                  col1, col2 = st.columns(2)
                  with col1:
                     
-                    st.write("2. Customer Segmentation Ml Classification Problem ")
+                    st.write("**2. Customer Segmentation Ml Classification Problem** ")
                     #st.write("----")
                     st.video(r"customer segmentation.mp4")
                     st.write("---")
@@ -371,11 +372,154 @@ elif selected == "Projects":
 
         This project showcases my skills in data visualization and strategic insights.
         """)
+              st.write("----")
+              with st.container(border = True):
+                 col1, col2 = st.columns(2)
+                 with col1:
                     
+                    st.write("**3. Customer Churn Analysis with Logistic Regression** ")
+                    #st.write("----")
+                    st.video(r"customer_churn_analysis.mp4")
+                    st.write("---")
+                    st.markdown("""
+                            [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                            
+                                """)
+                    
+                 with col2:
+                    
+                    st.markdown("""
+        ##### Project Description
+
+        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+
+        - **Dynamic Parameters:** Show top customers by sales.
+        - **Advanced DAX Functions:** Enhance insights with complex measures.
+        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+
+        This project showcases my skills in data visualization and strategic insights.
+        """)
+              st.write("----")
+              with st.container(border = True):
+                        col1, col2 = st.columns(2)
+                        with col1:
+                            
+                            st.write("**4. Customer Life Time Value Analysis With RFM** ")
+                            #st.write("----")
+                            st.video(r"CLTV.mp4")
+                            st.write("---")
+                            st.markdown("""
+                                    [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                                    
+                                        """)
+                            
+                        with col2:
+                            
+                            st.markdown("""
+                ##### Project Description
+
+                I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+
+                - **Dynamic Parameters:** Show top customers by sales.
+                - **Advanced DAX Functions:** Enhance insights with complex measures.
+                - **Context Transition:** Use `CALCULATE()` for precise analysis.
+
+                This project showcases my skills in data visualization and strategic insights.
+                """)
+              st.write("----")
+              with st.container(border = True):
+                    col1, col2 = st.columns(2)
+                    with col1:
+                                
+                                st.write("**4. Regression and Clustering problem with pyspark** ")
+                                #st.write("----")
+                                st.video(r"ml_pyspark.mp4")
+                                st.write("---")
+                                st.markdown("""
+                                        [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                                        
+                                            """)
+                                
+                    with col2:
+                                
+                                st.markdown("""
+                    ##### Project Description
+
+                    I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+
+                    - **Dynamic Parameters:** Show top customers by sales.
+                    - **Advanced DAX Functions:** Enhance insights with complex measures.
+                    - **Context Transition:** Use `CALCULATE()` for precise analysis.
+
+                    This project showcases my skills in data visualization and strategic insights.
+                    """)
+                        
+                        
+    elif selected2 == "R-Shiny":
+        st.write("**<<Machine Learning Projects>>**")
+        with st.container(border = True):
+              
+             
+              with st.container(border = True):
+                col1, col2 = st.columns(2)
+                with col1:
+                    
+                    st.write("**1. House For Rent R-Shiny Web App** ")
+                    #st.write("----")
+                    st.video(r"mapping_record.mp4")
+                    st.write("---")
+                    st.markdown("""
+                            [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                            
+                                """)
+                    
+                with col2:
+                    
+                    st.markdown("""
+        ##### Project Description
+
+        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+
+        - **Dynamic Parameters:** Show top customers by sales.
+        - **Advanced DAX Functions:** Enhance insights with complex measures.
+        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+
+        This project showcases my skills in data visualization and strategic insights.
+        """)
+                    
+              st.write("----")
+              with st.container(border = True):
+                 col1, col2 = st.columns(2)
+                 with col1:
+                    
+                    st.write("**2. Netdlix Data Visualisation R-Shiny** ")
+                    #st.write("----")
+                    st.video(r"R-shiny-netflix.mp4")
+                    st.write("---")
+                    st.markdown("""
+                            [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                            
+                                """)
+                    
+                 with col2:
+                    
+                    st.markdown("""
+        ##### Project Description
+
+        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+
+        - **Dynamic Parameters:** Show top customers by sales.
+        - **Advanced DAX Functions:** Enhance insights with complex measures.
+        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+
+        This project showcases my skills in data visualization and strategic insights.
+        """)
+             
 
 
 
-    if selected2 == "DASH": 
+
+    elif selected2 == "DASH": 
         #st.write("**<<Machhine Learning Projects>>**")
         st.write("**<<Plotly-Dash Projects>>**")
         with st.container(border = True):
@@ -462,8 +606,9 @@ elif selected == "Projects":
 
         This project showcases my skills in data visualization and strategic insights.
         """)
-        
-
+              
+              
+      
 
 
 
