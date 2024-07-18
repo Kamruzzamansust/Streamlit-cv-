@@ -2,7 +2,7 @@ import streamlit as st
 from  streamlit_option_menu import  option_menu 
 from streamlit_lottie import st_lottie
 import json
-#st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 # Set the title of the web app
 
 import streamlit as st
@@ -101,7 +101,7 @@ if selected == "About":
             )
 
         with col2:
-            st_lottie(lottie_coder, height=300,width = 300, key="coder")
+            st_lottie(lottie_coder, height=300,width = 500, key="coder")
 
     st.write("----")
 
@@ -147,10 +147,10 @@ I am particularly interested in roles that involve:
 """)
 
 elif selected == "Skills":
-    
+      st.subheader(" Technical Skills")
       with st.container(border = True):
-        st.subheader(" Technical Skills")
-        st_lottie(lotte_skill,height=300,width = 700, key="skills")
+        
+        st_lottie(lotte_skill,height=300,width = 900, key="skills")
         st.write("----")
         st.write("")
     #st.write("")
@@ -159,16 +159,18 @@ elif selected == "Skills":
 
 
 elif selected == "Projects":
-    selected = option_menu(
+    st.title("Projects Overview")
+    selected2 = option_menu(
             menu_title = None,
             options =['Power Bi','SQL','ML',"DASH",'R-Shiny',"Tensorflow","NLP","Time Series"],
             orientation= 'horizontal'
     )
     
-    if selected == "Power Bi":
+    if selected2 == "Power Bi":
+            st.write("**<<Power BI Projects>>**")
             with st.container(border = True):
-              st.title("Projects Overview")
-              st.write("**<<Power BI Projects>>**")
+              
+             
               with st.container(border = True):
                 col1, col2 = st.columns(2)
                 with col1:
@@ -229,7 +231,7 @@ elif selected == "Projects":
                 col1, col2 = st.columns(2)
                 with col1:
                     
-                    st.write("2. Hospital-Patient Data Analysis ")
+                    st.write("2. Transportation Data Analysis ")
                     #st.write("----")
                     st.video(r"Transportation.mp4")
                     st.write("---")
@@ -253,6 +255,62 @@ elif selected == "Projects":
         """)
                     
               st.write("----")
+              with st.container(border = True):
+                col1, col2 = st.columns(2)
+                with col1:
+                    
+                    st.write('4. "DV RENTAL" Data Base Analysis Using DAX ')
+                    #st.write("----")
+                    st.video(r"DVDrental.mp4")
+                    st.write("---")
+                    st.markdown("""
+                            [GitHub link](https://github.com/Kamruzzamansust/healthcare-data-analysis-Power-bi)
+                            
+                                """)
+                    
+                with col2:
+                    
+                    st.markdown("""
+        ##### Project Description
+
+        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+
+        - **Dynamic Parameters:** Show top customers by sales.
+        - **Advanced DAX Functions:** Enhance insights with complex measures.
+        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+
+        This project showcases my skills in data visualization and strategic insights.
+        """)
+if selected2 == "SQL":
+    st.write("**<<SQL Projects>>**")
+    
+    # Main container
+    with st.container():
+        # Inner container
+        with st.container():
+            # Single column
+            col1 = st.columns(1)[0]
+            with col1:
+                st.write("1. Adventure Works Sales Analysis")
+                st.video(r"dvrentaldatabsesql.mp4")
+                st.write("---")
+                st.markdown("[GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)")
+                st.write('---')
+                    
+        #         with col2:
+                    
+        #             st.markdown("""
+        # ##### Project Description
+
+        # I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+
+        # - **Dynamic Parameters:** Show top customers by sales.
+        # - **Advanced DAX Functions:** Enhance insights with complex measures.
+        # - **Context Transition:** Use `CALCULATE()` for precise analysis.
+
+        # This project showcases my skills in data visualization and strategic insights.
+        # """)
+                    
 
 
 
