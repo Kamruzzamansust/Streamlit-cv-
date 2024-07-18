@@ -178,7 +178,7 @@ elif selected == "Projects":
                     
                     st.write("1. Adventure Works Sales Analysis")
                     #st.write("----")
-                    st.video(r"D:\All_data_science_project\Cv_streamlit\Power Bi project 2.mp4")
+                    st.video("Power Bi project 2.mp4")
                     st.write("---")
                     st.markdown("""
                             [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
