@@ -456,7 +456,7 @@ elif selected == "Projects":
                         
                         
     elif selected2 == "R-Shiny":
-        st.write("**<<Machine Learning Projects>>**")
+        st.write("**<<R-Shiny Projects>>**")
         with st.container(border = True):
               
              
