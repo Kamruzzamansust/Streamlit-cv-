@@ -41,7 +41,7 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-local_css("Style\style.css")
+local_css(r"Style\\style.css")
 
 lottie_coder = load_lottiefile("Animation - 1721204539631.json")
 lottie_contact = load_lottiefile("contact.json")
@@ -52,7 +52,7 @@ st.title("Welcome To My Portfolio !!")
 st.write("----")
 
 # Sidebar with picture
-st.sidebar.image(r"D:\All_data_science_project\Cv_streamlit\arif2.png",width = 4, use_column_width=True)
+st.sidebar.image(r"arif2.png",width = 4, use_column_width=True)
 
 st.markdown("""
 <style>
