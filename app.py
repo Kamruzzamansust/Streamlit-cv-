@@ -41,12 +41,12 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-local_css("D:\All_data_science_project\Cv_streamlit\Style\style.css")
+local_css("Style\style.css")
 
-lottie_coder = load_lottiefile("D:\All_data_science_project\Cv_streamlit\Animation - 1721204539631.json")
-lottie_contact = load_lottiefile("D:\All_data_science_project\Cv_streamlit\contact.json")
+lottie_coder = load_lottiefile("Animation - 1721204539631.json")
+lottie_contact = load_lottiefile("contact.json")
 
-lotte_skill = load_lottiefile("D:\All_data_science_project\Cv_streamlit\skill.json")
+lotte_skill = load_lottiefile("skill.json")
 
 st.title("Welcome To My Portfolio !!")
 st.write("----")
