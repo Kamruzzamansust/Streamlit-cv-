@@ -2,6 +2,7 @@ import streamlit as st
 from  streamlit_option_menu import  option_menu 
 from streamlit_lottie import st_lottie
 import json
+from function.fun import project_overview
 st.set_page_config(layout="wide")
 # Set the title of the web app
 
@@ -161,11 +162,12 @@ elif selected == "Skills":
 
 elif selected == "Projects":
     st.title("Projects Overview")
-    selected2 = option_menu(
-            menu_title = None,
-            options =['Power Bi','SQL','ML',"DASH",'R-Shiny',"Tensorflow","NLP","Time Series"],
-            orientation= 'horizontal'
-    )
+    with st.container(border=True):
+        selected2 = option_menu(
+                menu_title = None,
+                options =['Power Bi','SQL','ML',"DASH",'R-Shiny',"Tensorflow","NLP","Time Series"],
+                orientation= 'horizontal'
+        )
     
     if selected2 == "Power Bi":
             st.write("**<<Power BI Projects>>**")
@@ -426,34 +428,131 @@ elif selected == "Projects":
 
                 This project showcases my skills in data visualization and strategic insights.
                 """)
+                     
               st.write("----")
               with st.container(border = True):
-                    col1, col2 = st.columns(2)
-                    with col1:
-                                
-                                st.write("**4. Regression and Clustering problem with pyspark** ")
-                                #st.write("----")
-                                st.video(r"ml_pyspark.mp4")
-                                st.write("---")
-                                st.markdown("""
-                                        [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                            col1, col2 = st.columns(2)
+                            with col1:
                                         
-                                            """)
-                                
-                    with col2:
-                                
-                                st.markdown("""
-                    ##### Project Description
+                                        st.write("**5. Regression and Clustering problem with pyspark** ")
+                                        #st.write("----")
+                                        st.video(r"ml_pyspark.mp4")
+                                        st.write("---")
+                                        st.markdown("""
+                                                [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                                                
+                                                    """)
+                                        
+                            with col2:
+                                        
+                                        st.markdown("""
+                            ##### Project Description
 
-                    I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+                            I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
 
-                    - **Dynamic Parameters:** Show top customers by sales.
-                    - **Advanced DAX Functions:** Enhance insights with complex measures.
-                    - **Context Transition:** Use `CALCULATE()` for precise analysis.
+                            - **Dynamic Parameters:** Show top customers by sales.
+                            - **Advanced DAX Functions:** Enhance insights with complex measures.
+                            - **Context Transition:** Use `CALCULATE()` for precise analysis.
 
-                    This project showcases my skills in data visualization and strategic insights.
-                    """)
+                            This project showcases my skills in data visualization and strategic insights.
+                            """)
+              st.write("---")
+              with st.container(border = True):
+                            col1, col2 = st.columns(2)
+                            with col1:
+                                        
+                                        st.write("**6. Market Busket Analysis with Python Aripri Algorithm** ")
+                                        #st.write("----")
+                                        st.video(r"mba.mp4")
+                                        st.write("---")
+                                        st.markdown("""
+                                                [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                                                
+                                                    """)
+                                        
+                            with col2:
+                                        
+                                        st.markdown("""
+                            ##### Project Description
+
+                            I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+
+                            - **Dynamic Parameters:** Show top customers by sales.
+                            - **Advanced DAX Functions:** Enhance insights with complex measures.
+                            - **Context Transition:** Use `CALCULATE()` for precise analysis.
+
+                            This project showcases my skills in data visualization and strategic insights.
+                            """)
+              st.write("----")                            
+              with st.container(border = True):
+                            col1, col2 = st.columns(2)
+                            with col1:
+                                        
+                                        st.write("**7. Using Apriori Algorithm For Coffe Recommendation** ")
+                                        #st.write("----")
+                                        st.video(r"apriori.mp4")
+                                        st.write("---")
+                                        st.markdown("""
+                                                [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                                                
+                                                    """)
+                                        
+                            with col2:
+                                        
+                                        st.markdown("""
+                            ##### Project Description
+
+                            I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+
+                            - **Dynamic Parameters:** Show top customers by sales.
+                            - **Advanced DAX Functions:** Enhance insights with complex measures.
+                            - **Context Transition:** Use `CALCULATE()` for precise analysis.
+
+                            This project showcases my skills in data visualization and strategic insights.
+                            """)
+                                        
+
                         
+                   
+                    
+                    
+                                
+ 
+
+                        
+
+
+    elif selected2 == "Tensorflow":
+        st.write("**<<Tensorflow Learning>**")
+        
+        # Main container
+        with st.container():
+            # Inner container
+            with st.container():
+                # Single column
+                col1 = st.columns(1)[0]
+                with col1:
+                    st.write("1.Hands On Tensorflow and Keras")
+                    st.video(r"Tensorflow.mp4")
+                    st.write("---")
+                    st.markdown("[GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)")
+                    st.write('---')
+            with st.container(border = True):
+                st.markdown("""
+            ##### Project Description
+
+            I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+
+            - **Dynamic Parameters:** Show top customers by sales.
+            - **Advanced DAX Functions:** Enhance insights with complex measures.
+            - **Context Transition:** Use `CALCULATE()` for precise analysis.
+
+            This project showcases my skills in data visualization and strategic insights.
+            """)
+                    
+              #st.write("----")
+             
+
                         
     elif selected2 == "R-Shiny":
         st.write("**<<R-Shiny Projects>>**")
@@ -492,7 +591,7 @@ elif selected == "Projects":
                  col1, col2 = st.columns(2)
                  with col1:
                     
-                    st.write("**2. Netdlix Data Visualisation R-Shiny** ")
+                    st.write("**2. Netflix Data Visualisation R-Shiny** ")
                     #st.write("----")
                     st.video(r"R-shiny-netflix.mp4")
                     st.write("---")
@@ -514,6 +613,8 @@ elif selected == "Projects":
 
         This project showcases my skills in data visualization and strategic insights.
         """)
+                    
+  
              
 
 
@@ -579,6 +680,8 @@ elif selected == "Projects":
 
         This project showcases my skills in data visualization and strategic insights.
         """)
+              st.write("----")
+                    
               with st.container(border = True):
                  col1, col2 = st.columns(2)
                  with col1:
@@ -606,6 +709,26 @@ elif selected == "Projects":
 
         This project showcases my skills in data visualization and strategic insights.
         """)
+                    
+
+    elif selected2 == "NLP": 
+        #st.write("**<<Machhine Learning Projects>>**")
+        st.write("**<<NLP Projects>>**")
+        with st.expander("**NLP Basics**"):
+             
+        #st.write("**<<NLP Projects>>**")
+            #with st.container(border = True):
+                project_overview("1. Basic NLP ",
+                                r"videos\NLP1.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1CQH2w15evItQVXFQqI5NpvjGYiVboAhf#scrollTo=P6IronP9qrg7)",
+                                """
+                                    
+           
+            """
+
+                                )
+
+               
               
               
       
