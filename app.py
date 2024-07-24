@@ -727,7 +727,80 @@ elif selected == "Projects":
             """
 
                                 )
-
+                st.write('---')
+                project_overview("2. Understanding Transformers ",
+                                r"NLP2.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1DO1H39HiFiFmU1Z-uJaYwlENEpxqoAav#scrollTo=8t1w7p8cu3Al)",
+                                """
+                                    
+           
+            """)
+                
+                st.write('---')
+                project_overview("3. Architecture Development Of Transformers",
+                                 r"NLP3.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1dLbRS5BPRyswrhkv0wv7WcvFgcPRC3hP#scrollTo=fnnfAaKCIcDt)",
+                                """
+                                    
+           
+            """)
+        with st.expander("**NLP INtermediate**"):
+              st.write('---')
+              project_overview("1. **Trying To Know about BERT**",
+                                 r"BERT1.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1edixmSMEUSPj6eO5V1_xLExkYwgeqQIr#scrollTo=qQDChvozM1QJ)",
+                                """
+                                    
+           
+            """)
+              st.write("---")
+              project_overview("2. **Masked Language modeling and Next Sentence Prediction With BERT** ",
+                                 r"BERTMASKED.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/18lG5UvQ8N1djCeHDwXV9d6zEUhnYgoyQ#scrollTo=qdHfE77rCBLs)",
+                                """
+                                    
+           
+            """)
+              st.write("---")
+              project_overview("3. **BERT Fine Tuning ( Without Pipeline )** ",
+                                 r"BERT2.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1rM0prvLLajG81bZew8bhykjTtiQ2pqEU#scrollTo=iravzBml_Dvu)",
+                                """
+                                    
+           
+            """)
+              st.write("---")
+              project_overview("3. **Fine Tuning DistilBERT With Custom Datest** ",
+                                 r"BERT3.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1qvcFj94l4-IrQ17X2tkoMwdE4RV8e96l#scrollTo=3uJ90BUf9gU1)",
+                                """
+                                    
+           
+            """)
+              st.write("---")
+              project_overview("4. **Create Api With Fast Api for Streamlit and httr for R shiny** ",
+                                 r"finetune.mp4",
+                                "[LINK NEED]",
+                                """
+                                    
+           
+            """)
+              st.write("---")
+              project_overview("5. **Trying To understand QA system** ",
+                                 r"QA.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1LrWV8ugDtLqozeNmjnVWnjGgraAG3eq0#scrollTo=EhCpzkFcb0mW)",
+                                """
+                                    
+           
+            """)
+              st.write("---")
+              project_overview("5. **Find Out The Sentiment For The Entity** ",
+                                 r"NER_With_Sentiment.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1E8pI0pTNE7Mj19nbwOhdv-I6jt3Udlwu)",
+                                """
+                                    
+           
+            """)
                
               
               
