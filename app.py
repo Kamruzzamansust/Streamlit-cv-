@@ -801,8 +801,7 @@ elif selected == "Projects":
                                     
            
             """)
-               
-              
+            
               
       
 
