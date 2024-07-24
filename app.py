@@ -719,7 +719,7 @@ elif selected == "Projects":
         #st.write("**<<NLP Projects>>**")
             #with st.container(border = True):
                 project_overview("1. Basic NLP ",
-                                r"videos\NLP1.mp4",
+                                r"NLP1.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/1CQH2w15evItQVXFQqI5NpvjGYiVboAhf#scrollTo=P6IronP9qrg7)",
                                 """
                                     
