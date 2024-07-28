@@ -17,3 +17,11 @@ def project_overview(project_name,Voideo_path,github_link,project_details):
                     
                 st.write("----")
 
+def markdown_writting(journey,text):
+          with st.container(border = True):
+                with st.expander(f"{journey}"):
+                 st.markdown(f'''
+                    {text}
+                ''')
+                 
+

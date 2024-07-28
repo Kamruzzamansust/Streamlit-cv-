@@ -2,7 +2,7 @@ import streamlit as st
 from  streamlit_option_menu import  option_menu 
 from streamlit_lottie import st_lottie
 import json
-from function.fun import project_overview
+from function.fun import project_overview,markdown_writting
 st.set_page_config(layout="wide")
 # Set the title of the web app
 
@@ -165,11 +165,39 @@ elif selected == "Projects":
     with st.container(border=True):
         selected2 = option_menu(
                 menu_title = None,
-                options =['Power Bi','SQL','ML',"DASH",'R-Shiny',"Tensorflow","NLP","Time Series"],
+                options =['SQL','Power Bi','ML',"DASH",'R-Shiny',"Tensorflow","NLP","Time Series"],
                 orientation= 'horizontal'
         )
     
     if selected2 == "Power Bi":
+            markdown_writting("**:blue-background[Click to See My Overall  Power BI journey]**","""
+### My Power BI Journey
+
+I divided my learning into three phases:
+
+#### 1. Data Modeling
+- Learned about dimensions and fact tables
+- Explored star, snowflake, and galaxy schemas
+- Understood role-playing dimensions and the importance of a date table
+- Learned about cardinality
+
+#### 2. ETL through Power Query
+- Loaded data from various sources like Excel, CSV, and databases
+- Performed data cleaning using built-in Power Query functions
+- Explored duplicates and references in Power Query
+- Focused on using built-in functionality without M script
+
+#### 3. Data Analysis with DAX
+- Learned about DAX functions, including table and relation functions
+- Explored calculated columns and measures
+- Understood how filters propagate
+- Focused on the CALCULATE function and context modifiers
+- Learned about various time intelligence functions
+
+
+
+
+""")
             st.write("**<<Power BI Projects>>**")
             with st.container(border = True):
               
@@ -287,7 +315,45 @@ elif selected == "Projects":
     
     elif selected2 == "SQL":
         
-        
+        markdown_writting("**:blue-background[Click to See My Overall SQL journey]**","""
+                            
+
+
+### My SQL Journey
+
+When I first learned SQL, I discovered various SQL commands like:
+
+- **DDL**: Data Definition Language
+- **DQL**: Data Query Language
+- **DML**: Data Manipulation Language
+- **DCL**: Data Control Language
+- **TCL**: Transaction Control Language
+
+Then, I explored database keys, including primary keys, foreign keys, composite keys, surrogate keys, and candidate keys. I also tried to understand schema design and the concepts of data warehouses, data marts, and data lakes.
+
+After grasping the theoretical concepts, I began learning about SQL queries. I focused on:
+
+- Basic query execution order and clauses
+- Various constraints used in SQL
+- Joins, such as:
+  - Inner join
+  - Left and right outer join
+  - Full outer join
+  - Natural join
+  - Self join
+
+I then learned about subqueries, including:
+
+- Subqueries with FROM
+- Subqueries with SELECT
+- Subqueries with WHERE and IN
+
+Next, I combined these with joins and explored CTEs (Common Table Expressions). I also learned about various window functions, transactions, and indexing methods like B-tree, hash, BRIN, and partial indexing to speed up queries.
+
+This is my overall SQL journey.
+
+
+                              """)
         st.write("**<<SQL Projects>>**")
         
         # Main container
@@ -300,21 +366,93 @@ elif selected == "Projects":
                     st.write("1. DVD RENTAL DATABASE ANALYSIS in POSTGRESQL")
                     st.video(r"dvrentaldatabsesql.mp4")
                     st.write("---")
-                    st.markdown("[GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)")
+                    st.markdown("[GitHub link](https://github.com/Kamruzzamansust/DVD-rental-Sql-Data-analysis-Project/blob/main/dvdrental_project.sql)")
                     st.write('---')
             with st.container(border = True):
                 st.markdown("""
             ##### Project Description
 
-            I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+            I used :orange-background[DVD rental database] Using Postgresql to create a SQL script to analyze the data. Key features:
 
-            - **Dynamic Parameters:** Show top customers by sales.
-            - **Advanced DAX Functions:** Enhance insights with complex measures.
-            - **Context Transition:** Use `CALCULATE()` for precise analysis.
+            - Apply Basic Query
+            - Uses Of  Join and Subquery 
+            - Some advance Techniques (Window Function , CTE)
 
-            This project showcases my skills in data visualization and strategic insights.
+           
             """)
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     elif selected2 == "ML":
+        markdown_writting("**:blue-background[Click to See  My Overall  Machine Learning journey]**","""
+        ### My Machine Learning Journey
+
+#### Data Cleaning and Visualization
+- Learned data cleaning techniques with Pandas and NumPy
+- Used Matplotlib and Seaborn for data visualization
+  - **Univariate Analysis**: Count plot, pie plot, histogram, distplot, box plot
+  - **Bivariate Analysis**: Scatter plot, bar plot, box plot, heatmap, pairplot, line plot
+  - **Multivariate Analysis**: Explored complex relationships between features
+
+#### Feature Engineering
+- **Feature Transformation**:
+  - Missing value handling: Mean, median, mode imputation, KNN imputation, regression imputation
+  - Handling categorical values and outlier detection
+  - Feature scaling: Min-max scaling, Z-normalization
+- **Feature Construction and Selection**:
+  - Techniques: Correlation coefficient, chi-square test, information gain
+- **Feature Extraction**:
+  - Methods: PCA, LDA, t-SNE
+
+#### Understanding ML Algorithms (Supervise Machine Laearning )
+- **Regression**:
+  - Simple Linear, Multiple Linear, and polynomial regression
+  - Regularization techniques: Lasso, ridge regression
+  - Gradient descent for finding global minima
+- **Classification**:
+  - Algorithms: SVM with kernel tricks, KNN, Naive Bayes
+  - Decision Trees: Information gain and entropy
+  - Importance of decision trees in ensemble methods: Random forest, bagging, stacking, boosting
+  - Weak learners in boosting algorithms
+
+#### Hyperparameter Tuning and Validation
+- Explored hyperparameters associated with various algorithms
+- Validation methods:
+  - Cross-validation and K-fold techniques
+  - Validation metrics: RMSE, MSE for regression, confusion matrix for classification
+
+####Clustering (Unsuporvised Machine Learning)
+- K Means , Kmeans ++
+- Hierarchical clustering
+- DBSCAN clustering - helpful for non linear clustering
+                           
+**Performance matrics for Clustering**
+   - silhoutte Score                                                                           
+
+#### Additional Concepts
+
+- How distrbution changes over Time which is known as concept drift 
+                          
+                          
+
+
+                          """)
         #st.write("**<<Machhine Learning Projects>>**")
         st.write("**<<Machine Learning Projects>>**")
         with st.container(border = True):
@@ -770,7 +908,7 @@ elif selected == "Projects":
            
             """)
               st.write("---")
-              project_overview("3. **Fine Tuning DistilBERT With Custom Datest** ",
+              project_overview("4. **Fine Tuning DistilBERT With Custom Datest** ",
                                  r"BERT3.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/1qvcFj94l4-IrQ17X2tkoMwdE4RV8e96l#scrollTo=3uJ90BUf9gU1)",
                                 """
@@ -778,7 +916,7 @@ elif selected == "Projects":
            
             """)
               st.write("---")
-              project_overview("4. **Create Api With Fast Api for Streamlit and httr for R shiny** ",
+              project_overview("5. **Create Api With Fast Api for Streamlit and httr for R shiny** ",
                                  r"finetune.mp4",
                                 "[LINK NEED]",
                                 """
@@ -786,7 +924,7 @@ elif selected == "Projects":
            
             """)
               st.write("---")
-              project_overview("5. **Trying To understand QA system** ",
+              project_overview("6. **Trying To understand QA system** ",
                                  r"QA.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/1LrWV8ugDtLqozeNmjnVWnjGgraAG3eq0#scrollTo=EhCpzkFcb0mW)",
                                 """
@@ -794,13 +932,36 @@ elif selected == "Projects":
            
             """)
               st.write("---")
-              project_overview("5. **Find Out The Sentiment For The Entity** ",
-                                 r"NER_With_Sentiment.mp4",
-                                "[COLAB link](https://colab.research.google.com/drive/1E8pI0pTNE7Mj19nbwOhdv-I6jt3Udlwu)",
+              project_overview("7. Text Summarization Transfer Learning With GPT-2, google-pegasus,T5",
+                                 r"Text_Summarization_simple.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1WNG2ZVvSBpuK3ZBEFCm8b1SV1Y1os1NY#scrollTo=LFEy_b0FU4U4)",
                                 """
                                     
            
             """)
+              st.write("---")
+              project_overview("8. **Question Answering With BERT** ",
+                                 r"Bert_qa_model.mp4",
+                                "As File Size size Large can't push to Github",
+                                """
+                                    
+           
+            """)
+              st.write("---")
+        with st.expander("**NLP Advance**"):
+             st.write('---')
+             project_overview("1. **BD Constitutional Chatbot** ",
+                                 r"con_rag.mp4",
+                                 
+                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                """
+                                    
+           
+            """)
+             
+             
+           
+             
             
               
       
