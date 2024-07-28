@@ -2,7 +2,7 @@ import streamlit as st
 from  streamlit_option_menu import  option_menu 
 from streamlit_lottie import st_lottie
 import json
-from function.fun import project_overview,markdown_writting
+from function.fun import project_overview ,markdown_writting
 st.set_page_config(layout="wide")
 # Set the title of the web app
 
@@ -423,10 +423,11 @@ This is my overall SQL journey.
 #### Understanding ML Algorithms (Supervise Machine Laearning )
 - **Regression**:
   - Simple Linear, Multiple Linear, and polynomial regression
+  - SV Regression , RF , BAGGING , BOOSTing Algorithms
   - Regularization techniques: Lasso, ridge regression
   - Gradient descent for finding global minima
 - **Classification**:
-  - Algorithms: SVM with kernel tricks, KNN, Naive Bayes
+  - Algorithms: Logistic Regression ,SVM classifier with kernel tricks, KNN, Naive Bayes
   - Decision Trees: Information gain and entropy
   - Importance of decision trees in ensemble methods: Random forest, bagging, stacking, boosting
   - Weak learners in boosting algorithms
@@ -435,12 +436,12 @@ This is my overall SQL journey.
 - Explored hyperparameters associated with various algorithms
 - Validation methods:
   - Cross-validation and K-fold techniques
-  - Validation metrics: RMSE, MSE for regression, confusion matrix for classification
+  - Validation metrics: RMSE, MSE for regression, confusion matrix ,AUC for classification
 
-####Clustering (Unsuporvised Machine Learning)
+#### Clustering (Unsuporvised Machine Learning)
 - K Means , Kmeans ++
 - Hierarchical clustering
-- DBSCAN clustering - helpful for non linear clustering
+- DBSCAN and HDBSCAN clustering - helpful for non linear clustering
                            
 **Performance matrics for Clustering**
    - silhoutte Score                                                                           
@@ -661,6 +662,40 @@ This is my overall SQL journey.
 
 
     elif selected2 == "Tensorflow":
+        markdown_writting("**:blue-background[Click to See  My Overall  Deep Learning journey With Tensorflow]**",'''
+        ### My Deep Learning Journey with TensorFlow
+
+#### Learning Deep Learning Fundamentals
+- **Types of Neural Networks**:
+  - Explored various architectures and their applications
+- **Perceptron and MLP**:
+  - Studied the basics of perceptrons and multilayer perceptrons (MLP)
+- **Loss Functions**:
+  - Understood how loss functions guide model training
+- **Propagation Techniques**:
+  - **Forward Propagation**: How inputs are transformed through the network
+  - **Backpropagation**: Calculating gradients to update weights
+- **Gradient Descent**:
+  - Learned how it optimizes the model
+  - **Vanishing Gradient Problem**: Identified issues with deep networks and explored solutions
+
+#### Improving Model Performance
+- **Techniques**:
+  - Early stopping, data scaling, dropout layers, and regularization
+- **Activation Functions**:
+  - Explored various types, including how ReLU addresses vanishing gradients
+- **Weight Initialization**:
+  - Techniques to start training effectively
+- **Batch Normalization**:
+  - Importance in stabilizing and speeding up training
+- **Optimizers**:
+  - Studied optimizers and their relation to gradient descent
+
+#### Applying with TensorFlow
+- Began implementing these concepts using TensorFlow for practical applications
+
+This journey has deepened my understanding of deep learning and equipped me with the skills to use TensorFlow effectively.
+                          ''')
         st.write("**<<Tensorflow Learning>**")
         
         # Main container
@@ -693,6 +728,44 @@ This is my overall SQL journey.
 
                         
     elif selected2 == "R-Shiny":
+        markdown_writting("**:blue-background[Click to See  My Overall  R shiny Journey]**","""
+        ### My R and R Shiny Journey
+
+#### Learning R
+- **Data Manipulation**: 
+  - Used `dplyr` and `tidyverse` for efficient data manipulation
+- **Handling Variables**:
+  - `forcats` for categorical variables
+  - `stringr` for string operations
+  - `lubridate` for managing date variables
+- **Data Visualization**:
+  - Created plots using `ggplot2` for basic visualizations
+
+#### Exploring R Shiny
+- **UI Components**:
+  - Learned about various UI inputs and outputs
+- **Reactivity**:
+  - Explored how reactivity works in Shiny applications
+  - Created reactive expressions and understood how they change based on user input
+- **Building Interactive Apps**:
+  - Started building simple interactive applications
+  - Experimented with layout and design for better user experience
+
+#### Enhancing Shiny Apps
+- **Shiny Dashboard**:
+  - Learning to use the `shinydashboard` package for structured dashboards
+- **Styling**:
+  - Exploring `bslib` for customizable themes
+  - Using the `fresh` library for advanced styling options
+
+This journey has equipped me with foundational skills in R and R Shiny, setting the stage for creating dynamic and interactive applications.
+
+
+
+
+
+         """)
+
         st.write("**<<R-Shiny Projects>>**")
         with st.container(border = True):
               
@@ -751,7 +824,27 @@ This is my overall SQL journey.
 
         This project showcases my skills in data visualization and strategic insights.
         """)
-                    
+              st.write("-----")
+              project_overview("Simple Sales Dashboard with R shiny",
+                               r"Sales_dashbord_R shiny.mp4",
+                               "[GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)",
+                               """
+                               ##### Project Description
+
+        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+
+        - **Dynamic Parameters:** Show top customers by sales.
+        - **Advanced DAX Functions:** Enhance insights with complex measures.
+        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+
+        This project showcases my skills in data visualization and strategic insights.
+        """
+
+
+
+                               )
+
+            
   
              
 
@@ -759,7 +852,32 @@ This is my overall SQL journey.
 
 
     elif selected2 == "DASH": 
-        #st.write("**<<Machhine Learning Projects>>**")
+        markdown_writting("**:blue-background[Click to See  My Overall  Plotly dash Journey]**","""
+        ### My Plotly Dash Journey
+
+#### Dashboard Layout
+- Learned how to create and organize dashboards using Dash
+
+#### Plotly Graphs
+- Explored various types of plots using Plotly:
+  - Line charts
+  - Bar charts
+  - Scatter plots
+  - Pie charts
+  - Heatmaps
+  - More advanced visualizations
+
+#### Callbacks
+- Implemented basic callbacks to make dashboards interactive
+- Used callbacks to update graphs dynamically based on user input
+
+This journey helped me create interactive and visually appealing dashboards with Python and Plotly Dash.
+
+         """)
+
+
+
+
         st.write("**<<Plotly-Dash Projects>>**")
         with st.container(border = True):
               
@@ -846,10 +964,169 @@ This is my overall SQL journey.
         - **Context Transition:** Use `CALCULATE()` for precise analysis.
 
         This project showcases my skills in data visualization and strategic insights.
+                                
         """)
                     
 
     elif selected2 == "NLP": 
+        markdown_writting("**:blue-background[Click to See  My Overall NLP journey]**",'''
+        ### My NLP Journey: --------->>> stage 1 
+#### Text Preprocessing
+
+#### Introduction to NLP Concepts
+- **Key Terms**:
+  - **Corpus**: Collection of texts used for analysis
+  - **Vocabulary**: Set of unique words in a corpus
+  - **Documents and Words**: Basic units of text analysis
+
+#### Text Preprocessing Techniques
+- **Tokenization**:
+  - Splitting text into individual words or sentences using NLTK and SpaCy
+- **Stemming and Lemmatization**:
+  - **Stemming**: Reducing words to their root form
+  - **Lemmatization**: Converting words to their base form
+- **Stopword Removal**:
+  - Eliminating common words that add little meaning
+- **Regex Implementation**:
+  - Using regular expressions for advanced text cleaning
+- **Parts of Speech (POS) Tagging**:
+  - Identifying grammatical parts of text
+- **Named Entity Recognition (NER)**:
+  - Extracting entities like names, dates, and locations
+- **Sentence Boundary Detection**:
+  - Identifying sentence beginnings and endings
+
+#### Additional Preprocessing Techniques
+- **Lowercasing**:
+  - Converting all text to lowercase for uniformity
+- **Punctuation Removal**:
+  - Stripping punctuation to focus on words
+- **Normalization**:
+  - Converting text to a consistent format, e.g., numbers or dates
+### Text to Vector
+
+#### Text Vectorization Techniques
+- **Basic Text Vectorization**:
+  - **Bag of Words**: Represents text by word frequency
+  - **TF-IDF**: Considers word importance across documents
+  - **Word Embeddings**: Dense vector representations
+
+#### Types of Word Embeddings
+- **Count or Frequency Based Embeddings**:
+  - **One Hot Encoding**: Binary vectors for word presence
+  - **Bag of Words**: Simple word count
+  - **N-grams**: Sequences of words for context
+  - **TF-IDF**: Term frequency-inverse document frequency
+
+- **Deep Learning Based Embeddings**:
+  - **Word2Vec**: Captures context using CBOW and Skip-grams
+  - **GloVe**: Global vectors for word representation
+  - **ELMo**: Contextualized word representations
+  - **Doc2Vec**: Extends Word2Vec for entire documents
+-----------------------------------------------------------------------------------------------------                          
+#### My NLP Journey: --------->>> stage 2
+In this stage of my NLP journey, I've explored the following concepts:
+
+## Recurrent Neural Networks (RNN)
+- Learned about **hidden states** that help capture sequential data.
+
+## Long Short-Term Memory (LSTM)
+- Discovered how LSTMs improve upon RNNs with an added **memory** feature.
+- Studied different components:
+  - **Cell State**: Maintains long-term dependencies.
+  - **Forget Gate**: Decides what information to discard.
+  - **Candidate Gate**: Proposes new content for the memory.
+  - **Input Gate**: Updates the memory.
+  - **Output Gate**: Produces the final output.
+- Explored LSTM variants:
+  - **Vanilla LSTM**: The standard model.
+  - **Stacked LSTM**: Layers for depth.
+  - **Bidirectional LSTM**: Processes sequences from both directions.
+  - **Peephole LSTM**: Incorporates additional connections.
+
+## Gated Recurrent Unit (GRU)
+- Learned about the GRU's efficiency with:
+  - **Update Gate**: Manages information retention.
+  - **Reset Gate**: Controls new information integration.
+
+## Reflections
+- **RNNs** are foundational for sequential tasks but have limitations.
+- **LSTMs** enhance memory handling for improved accuracy.
+- **GRUs** offer a streamlined alternative without sacrificing performance.                          
+-----------------------------------------------------------
+#### My NLP Journey: --------->>> stage 3
+
+## Sequence-to-Sequence (seq2seq) Models
+- Explored how **encoder-decoder** structures form the basis of seq2seq models.
+
+## Transformers
+- **Motivation**: Overcame the limitations of RNNs and LSTMs.
+- **Subword Tokenization**:
+  - **Byte Pair Encoding (BPE)**
+  - **WordPiece**
+  - **SentencePiece**
+- **Positional Encoding**: Essential for capturing sequence order.
+
+## Transformer Architecture
+- **Encoder**:
+  - **Attention Mechanism**: Learned about self-attention and multi-head attention.
+  - **Layer Normalization**: Improves training stability.
+- **Decoder**: Complements the encoder for generating outputs.
+
+### Key Learnings
+- Understanding Transformers has paved the way for exploring **Large Language Models (LLMs)**.
+
+
+---------------------------------------------------
+#### My NLP Journey: --------->>> stage 4
+
+## Language Modeling
+- Studied **causal language models (CLM)** and **masked language models (MLM)**.
+- Learned the differences between **CLM**, **MLM**, and **seq2seq** models.
+
+## BERT (Bidirectional Encoder Representations from Transformers)
+- Utilizes masked language modeling (MLM) for:
+  - **Next Sentence Prediction**
+  - **Question Answering (Q&A)**
+  - **Text Classification**
+  - **Text Summarization**
+  - **Sentiment Analysis**
+  - **Named Entity Recognition (NER)**
+- Fine-tuning BERT for various NLP tasks.
+
+## Practical Applications
+- Used Hugging Face and Tensorflow, Pytorch to implement these models.
+- Completed small projects to gain hands-on experience.    
+----------------------------------------------------------------------------
+#### My NLP Journey: --------->>> stage 5
+
+## LangChain Exploration
+- **Model Input/Output**: 
+  - Learned about prompts and their types.
+  - Explored different models like LLMs and chat models.
+
+## Memory Module
+- Studied how memory enhances interactions within LangChain.
+
+## Retrievers
+- Investigated various types and their roles in fetching relevant data.
+
+## Chain Types
+- **Simple Sequential Chain**
+- **Router Chain**
+- Understood RAG and its pipeline.
+
+## Advanced LangChain Concepts
+- Currently exploring **Agents**, **Tools**, and **Toolkits** for advanced applications.
+## Advance Fine tuning Methods 
+- Lora/qlora
+- Used unsloth  for faster Fine tuning 
+- Used Trainer and SFT trainer for Fine Tuning 
+                           
+                      
+
+
+                          ''')
         #st.write("**<<Machhine Learning Projects>>**")
         st.write("**<<NLP Projects>>**")
         with st.expander("**NLP Basics**"):
@@ -958,7 +1235,70 @@ This is my overall SQL journey.
                                     
            
             """)
-             
+    elif selected2 == "Time Series":
+         markdown_writting("**:blue-background[Click to See  My Overall Time Series Learning journey]**",'''
+        # Time Series Analysis: Phase 1 - Statistical Approach
+
+## Understanding Time Series
+- **Types of Time Series**: Stationary and non-stationary
+- **Stationarity**:
+  - Explored **Augmented Dickey-Fuller (ADF) Test** and **Random Walk** concepts
+  - Utilized **Autocorrelation Function (ACF)** for analysis
+
+## Time Series Components
+- **Trend, Seasonality, and Noise**
+- **Decomposition**: Understanding its importance for analysis
+
+## Forecasting Modeling Techniques
+- **Exponential Smoothing**:
+  - From simple to triple exponential smoothing methods
+- **Moving Average Methods**:
+  - Applied window statistics for analysis
+
+## Autoregressive Models
+- **AR (Autoregressive) Process**
+- **ARMA (Autoregressive Moving Average)**
+- **ARIMA (AutoRegressive Integrated Moving Average)**:
+  - For forecasting non-stationary time series
+
+## Seasonal Models
+- **SARIMA (Seasonal ARIMA)**: Incorporates seasonality
+- **SARIMAX (Seasonal ARIMA with Exogenous Variables)**:
+  - Introduction to multivariate time series
+
+## Vector Models
+- **VAR (Vector Autoregression)**: For handling multivariate series
+---------------------------------------------------------------------
+# Time Series Analysis: Phase 2 - Machine Learning Approach
+
+## Machine Learning Techniques for Time Series
+- **Linear Regression**: Applied for basic forecasting tasks.
+- **Gradient Boosting**: Utilized to capture complex patterns.
+- **XGBoost**: Employed for its efficiency and performance.
+- **LightGBM**: Leveraged for handling large datasets and faster training.
+------------------------------------------------------------------------
+# Time Series Analysis: Phase 3 - Deep Learning Approach
+
+## Deep Learning Techniques for Time Series
+- **Recurrent Neural Networks (RNN)**: Implemented for capturing sequential dependencies.
+- **Long Short-Term Memory (LSTM)**:
+  - Explored various types for enhanced forecasting.
+  - Applied to both single-step and multistep multivariate forecasting.
+------------------------------------------------------------------------
+# Time Series Analysis: Phase 4 - State-of-the-Art Technologies
+
+## Advanced Tools for Time Series
+- **Facebook Prophet**: Applied for easy handling of seasonality and holiday effects.
+- **Neural Prophet**: Explored for its enhancements over Prophet with neural network capabilities.
+
+
+                           
+                        
+
+
+
+                          ''')
+         
              
            
              
