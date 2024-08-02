@@ -180,6 +180,7 @@ I divided my learning into three phases:
 - Explored star, snowflake, and galaxy schemas
 - Understood role-playing dimensions and the importance of a date table
 - Learned about cardinality
+- Learned About Granularity 
 
 #### 2. ETL through Power Query
 - Loaded data from various sources like Excel, CSV, and databases
@@ -203,10 +204,10 @@ I divided my learning into three phases:
               
              
               with st.container(border = True):
-                col1, col2 = st.columns(2)
+                col1, col2 = st.columns(2,gap = "large")
                 with col1:
                     
-                    st.write("1. Adventure Works Sales Analysis")
+                    st.write("1. **Adventure Works Sales Analysis**")
                     #st.write("----")
                     st.video("Power Bi project 2.mp4")
                     st.write("---")
@@ -217,24 +218,28 @@ I divided my learning into three phases:
                     
                 with col2:
                     
-                    st.markdown("""
-        ##### Project Description
+                    
+                    
+                     st.markdown("""
+       #### Project Description
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+In this project, I aimed to analyze customer data using DAX and measures. The objectives were as follows:
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+- **Total Number of Customers:** Calculate the total number of customers.
+- **Average Customer Age:** Determine the average age of customers.
+- **Age Grouping:** Create a calculated column to group customers by age.
+- **Sales Analysis:** Identify that customers aged 31 to 60 are primarily responsible for most sales.
+- **Dynamic Top Customers Calculation:** Use parameters to dynamically find top customers based on sales.
 
-        This project showcases my skills in data visualization and strategic insights.
+This analysis was conducted using DAX, providing insights into customer demographics and sales trends.
         """)
                     
               st.write("----")
               with st.container(border = True):
-                col1, col2 = st.columns(2)
+                col1, col2 = st.columns(2,gap = 'large')
                 with col1:
                     
-                    st.write("2. Hospital-Patient Data Analysis ")
+                    st.write("2. **Hospital-Patient Data Analysis** ")
                     #st.write("----")
                     st.video(r"healthpowerbi.mp4")
                     st.write("---")
@@ -246,71 +251,76 @@ I divided my learning into three phases:
                 with col2:
                     
                     st.markdown("""
-        ##### Project Description
+        #### Project Description
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+In this project, I aimed to analyze patient trends and generate insights:
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+- **Monthly Patient Trends:** Analyze patient counts across different months.
+- **Weekly Patient Count:** Break down patient visits by week type.
+- **Average Waiting Time:** Calculate the average waiting time for patients.
+- **Satisfaction Score:** Evaluate patient satisfaction scores.
+- **Demographic Analysis:** Explore differences in satisfaction scores and average waiting times among different racesby creating parameters
 
-        This project showcases my skills in data visualization and strategic insights.
+        
         """)
                     
               st.write("----")
               with st.container(border = True):
-                col1, col2 = st.columns(2)
+                col1, col2 = st.columns(2,gap = 'large')
                 with col1:
                     
-                    st.write("2. Transportation Data Analysis ")
+                    st.write("2. **Transportation Data Analysis** ")
                     #st.write("----")
                     st.video(r"Transportation.mp4")
                     st.write("---")
                     st.markdown("""
-                            [GitHub link](https://github.com/Kamruzzamansust/healthcare-data-analysis-Power-bi)
+                            [GitHub link](https://github.com/Kamruzzamansust/Transportation-Dashboard-With-Powr-BI)
                             
                                 """)
                     
                 with col2:
                     
                     st.markdown("""
-        ##### Project Description
+                                
+        #### Project Description                        
+This dashboard provides insights into transportation operations using DAX measures. Key features include:
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+- **Busiest and Least Busy Routes:** Identify the most and least traveled routes.
+- **Year-over-Year Profit Analysis:** Examine profit during peak and off-peak hours.
+- **Time Group Distribution:** Analyze passenger counts at different times of the day.
+- **Bus Utilization:** Assess bus usage efficiency.
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
-
-        This project showcases my skills in data visualization and strategic insights.
+To achieve these insights, I used DAX functions such as `CALCULATE()`, `SUMMARIZE()`, `SUMX()`, `TOPN()`, and others.
         """)
                     
               st.write("----")
               with st.container(border = True):
-                col1, col2 = st.columns(2)
+                col1, col2 = st.columns(2,gap = 'large')
                 with col1:
                     
-                    st.write('4. "DV RENTAL" Data Base Analysis Using DAX ')
+                    st.write('4. "DVD RENTAL" Data Base Report Using DAX ')
                     #st.write("----")
                     st.video(r"DVDrental.mp4")
                     st.write("---")
                     st.markdown("""
-                            [GitHub link](https://github.com/Kamruzzamansust/healthcare-data-analysis-Power-bi)
+                            [GitHub link](https://github.com/Kamruzzamansust/DvD-rental-power-bi)
                             
                                 """)
                     
                 with col2:
                     
                     st.markdown("""
-        ##### Project Description
+        
+                                #### Project Description
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+        
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+In this project, I connected Power BI with a PostgreSQL database to analyze the DVD rental data. Key features of the report include:
 
-        This project showcases my skills in data visualization and strategic insights.
+- **Top Performing Movies:** Identify movies with the highest performance.
+- **Customer Count by Country:** Display the number of customers from various countries.
+- **Top Performing Actors:** Highlight actors based on selected movie ratings.
+- **Top Customers:** Analyze top customers using DAX calculations.
         """)
     
     elif selected2 == "SQL":
@@ -319,37 +329,46 @@ I divided my learning into three phases:
                             
 
 
-### My SQL Journey
+# My SQL Journey
 
-When I first learned SQL, I discovered various SQL commands like:
-
+## SQL Commands
 - **DDL**: Data Definition Language
 - **DQL**: Data Query Language
 - **DML**: Data Manipulation Language
 - **DCL**: Data Control Language
 - **TCL**: Transaction Control Language
 
-Then, I explored database keys, including primary keys, foreign keys, composite keys, surrogate keys, and candidate keys. I also tried to understand schema design and the concepts of data warehouses, data marts, and data lakes.
+## Database Concepts
+- **Keys**: Primary, Foreign, Composite, Surrogate, Candidate
+- **Schema Design**: Data Warehouses, Data Marts, Data Lakes
 
-After grasping the theoretical concepts, I began learning about SQL queries. I focused on:
+## SQL Queries
+- **Query Execution Order and Clauses**
+- **Constraints**
+- **Joins**:
+  - Inner Join
+  - Left and Right Outer Join
+  - Full Outer Join
+  - Natural Join
+  - Self Join
 
-- Basic query execution order and clauses
-- Various constraints used in SQL
-- Joins, such as:
-  - Inner join
-  - Left and right outer join
-  - Full outer join
-  - Natural join
-  - Self join
+## Subqueries and Advanced Concepts
+- **Subqueries**:
+  - With FROM
+  - With SELECT
+  - With WHERE and IN
+- **Common Table Expressions (CTEs)**
+- **Window Functions**
+- **Transactions**: Including GRANT, REVOKE, ROLLBACK
 
-I then learned about subqueries, including:
+## Indexing
+- **Methods**: B-tree, Hash, BRIN, Partial Indexing
 
-- Subqueries with FROM
-- Subqueries with SELECT
-- Subqueries with WHERE and IN
+## Views
+- **Dynamic Views**
+- **Materialized Views**
 
-Next, I combined these with joins and explored CTEs (Common Table Expressions). I also learned about various window functions, transactions, and indexing methods like B-tree, hash, BRIN, and partial indexing to speed up queries.
-
+## Stored Procedures
 This is my overall SQL journey.
 
 
@@ -460,7 +479,7 @@ This is my overall SQL journey.
               
              
               with st.container(border = True):
-                col1, col2 = st.columns(2)
+                col1, col2 = st.columns(2,gap = 'large')
                 with col1:
                     
                     st.write("**1. Food Delivery Status Classification with Xg BOOST and Streamlit** ")
@@ -468,27 +487,26 @@ This is my overall SQL journey.
                     st.video(r"Food.mp4")
                     st.write("---")
                     st.markdown("""
-                            [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                            [GitHub link](https://github.com/Kamruzzamansust/Food_Delivery_Status_with_XGBOOST_and_Streamlit)
                             
                                 """)
                     
                 with col2:
                     
                     st.markdown("""
-        ##### Project Description
+        ## Project Description
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+In this project, I developed a classification model using XGBoost to predict food delivery statuses. Key components include:
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
-
-        This project showcases my skills in data visualization and strategic insights.
+- **XGBoost Model:** Utilized for accurate classification of delivery statuses.
+- **API with FastAPI:** Created an API to request predictions from the model.
+- **Streamlit Frontend:** Developed a user-friendly interface for visual interaction with the model via API responses.
+- **Docker Compose:** Combined both services to ensure seamless integration and deployment.
         """)
                     
               st.write("----")
               with st.container(border = True):
-                 col1, col2 = st.columns(2)
+                 col1, col2 = st.columns(2,gap = 'large')
                  with col1:
                     
                     st.write("**2. Customer Segmentation Ml Classification Problem** ")
@@ -496,7 +514,7 @@ This is my overall SQL journey.
                     st.video(r"customer segmentation.mp4")
                     st.write("---")
                     st.markdown("""
-                            [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                            [COLAB LINK](https://colab.research.google.com/drive/1ieJWE8-frmn66YyU7hO8PDGFcAAgDg1F#scrollTo=kQ-AxkptE9ik)
                             
                                 """)
                     
@@ -505,17 +523,17 @@ This is my overall SQL journey.
                     st.markdown("""
         ##### Project Description
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+        
+This project involves advanced customer segmentation techniques. Key components include:
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
-
-        This project showcases my skills in data visualization and strategic insights.
+- **Trade Area Modeling:** Implemented the Huff model to calculate the probability that each customer community will purchase from each store based on distance and attractiveness.
+- **Expected Sales and Market Share:** Calculated expected sales and corresponding market share for each store.
+- **RFM Analysis:** Ranked customers using Recency, Frequency, and Monetary value.
+- **Customer Segmentation:** Applied K-means clustering to segment customers based on RFM values.
         """)
               st.write("----")
               with st.container(border = True):
-                 col1, col2 = st.columns(2)
+                 col1, col2 = st.columns(2,gap = 'large')
                  with col1:
                     
                     st.write("**3. Customer Churn Analysis with Logistic Regression** ")
@@ -523,7 +541,7 @@ This is my overall SQL journey.
                     st.video(r"customer_churn_analysis.mp4")
                     st.write("---")
                     st.markdown("""
-                            [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                            [COLAB LINK](https://colab.research.google.com/drive/1H5zC5xguYU8h44nX3nc29EsrPr7V84jU#scrollTo=B0FRsxgtljw4)
                             
                                 """)
                     
@@ -532,17 +550,17 @@ This is my overall SQL journey.
                     st.markdown("""
         ##### Project Description
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+In this project, I performed customer churn analysis using logistic regression. Key aspects include:
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+- **Logistic Regression:** Utilized for classifying customer churn.
+- **Regularization:** Applied Lasso for regularization to enhance model performance.
+- **Hyperparameter Tuning:** Used GridSearchCV to optimize model parameters.
+- **Model Accuracy:** Achieved an accuracy of 83%.
 
-        This project showcases my skills in data visualization and strategic insights.
         """)
               st.write("----")
               with st.container(border = True):
-                        col1, col2 = st.columns(2)
+                        col1, col2 = st.columns(2,gap = 'large')
                         with col1:
                             
                             st.write("**4. Customer Life Time Value Analysis With RFM** ")
@@ -550,7 +568,7 @@ This is my overall SQL journey.
                             st.video(r"CLTV.mp4")
                             st.write("---")
                             st.markdown("""
-                                    [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                                    [COLAB LINK](https://colab.research.google.com/drive/1hUMQL5d3tFAZfdUb30oAmiguLMNlpZei#scrollTo=ZLXaOYw3LM_w)
                                     
                                         """)
                             
@@ -559,18 +577,20 @@ This is my overall SQL journey.
                             st.markdown("""
                 ##### Project Description
 
-                I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+                
+In this project, I focused on analyzing Customer Lifetime Value (CLV) with the following steps:
 
-                - **Dynamic Parameters:** Show top customers by sales.
-                - **Advanced DAX Functions:** Enhance insights with complex measures.
-                - **Context Transition:** Use `CALCULATE()` for precise analysis.
-
-                This project showcases my skills in data visualization and strategic insights.
+- **Feature Analysis:** Emphasized important features such as recency, average monetary value, and frequency of buying.
+- **RFM Scoring:** Calculated the overall RFM score to evaluate customer value.
+- **Clustering:** Used clustering to categorize customers into `low_ltv`, `mid_ltv`, and `high_ltv` segments.
+- **Supervised Learning:** Converted the problem into a supervised ML task and applied a Random Forest classifier.
+- **Hyperparameter Tuning:** Optimized model parameters using hyperparameter tuning.
+- **Model Accuracy:** Achieved an accuracy of 93%..
                 """)
                      
               st.write("----")
               with st.container(border = True):
-                            col1, col2 = st.columns(2)
+                            col1, col2 = st.columns(2,gap = 'large')
                             with col1:
                                         
                                         st.write("**5. Regression and Clustering problem with pyspark** ")
@@ -578,7 +598,7 @@ This is my overall SQL journey.
                                         st.video(r"ml_pyspark.mp4")
                                         st.write("---")
                                         st.markdown("""
-                                                [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                                                [DATABRICKS Link](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4465030434132554/983382902875658/3145564464336035/latest.html)
                                                 
                                                     """)
                                         
@@ -587,25 +607,41 @@ This is my overall SQL journey.
                                         st.markdown("""
                             ##### Project Description
 
-                            I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+In this Implement a regression model to predict outcomes based on input features.
 
-                            - **Dynamic Parameters:** Show top customers by sales.
-                            - **Advanced DAX Functions:** Enhance insights with complex measures.
-                            - **Context Transition:** Use `CALCULATE()` for precise analysis.
+**Approach**:
+1. **Understanding PySpark**:
+   - Explored PySpark’s architecture, including the master process, worker process, and cluster manager.
+   - Gained familiarity with the PySpark ecosystem components like Spark SQL, Spark Streaming, MLlib, and GraphX.
+   
+2. **Data Handling and Data Manipulation**:
+   - Defined schemas and read CSV files into PySpark DataFrames.
+   - Utilized Spark SQL for data selection, filtering, and transformation using `pyspark.sql.functions`.
+   -- Applied RDD operations (map, filter, reduce) and User-Defined Functions (UDFs) for initial data processing.
 
-                            This project showcases my skills in data visualization and strategic insights.
+3. **Machine Learning with MLlib**:
+   - Implemented regression models and Clustreing using MLlib.
+   - Applied featurization, pipelines, transformers, and estimators.
+   - Tuned hyperparameters using `CrossValidator` .
+
+5. **Key Parameters**:
+   - **Ratings**: Created an RDD of ratings, rows, or tuples.
+   - **Rank**: Computed and ranked features.
+   - **Lambda**: Applied regularization.
+   - **Blocks**: Managed parallel computations with a default value of -1.
+
                             """)
               st.write("---")
               with st.container(border = True):
-                            col1, col2 = st.columns(2)
+                            col1, col2 = st.columns(2,gap = 'large')
                             with col1:
                                         
-                                        st.write("**6. Market Busket Analysis with Python Aripri Algorithm** ")
+                                        st.write("**6. Market Busket Analysis with Python Apriori Algorithm** ")
                                         #st.write("----")
                                         st.video(r"mba.mp4")
                                         st.write("---")
                                         st.markdown("""
-                                                [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                                                [COLAB Link](https://colab.research.google.com/drive/17P00B9LTzk3FSD7WfZzaIy9wx_MHkeYu#scrollTo=-SB7jfN1Sd-b)
                                                 
                                                     """)
                                         
@@ -614,17 +650,30 @@ This is my overall SQL journey.
                                         st.markdown("""
                             ##### Project Description
 
-                            I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+**Objective**: Perform market basket analysis to identify patterns in transactional data and uncover associations between items.
 
-                            - **Dynamic Parameters:** Show top customers by sales.
-                            - **Advanced DAX Functions:** Enhance insights with complex measures.
-                            - **Context Transition:** Use `CALCULATE()` for precise analysis.
+**Approach**:
 
-                            This project showcases my skills in data visualization and strategic insights.
+1. **Understanding Algorithms**:
+   - **AIS (Agrawal-Imieli-Smith)**: Explored this early algorithm for association rule mining to understand its principles and limitations.
+   - **SETM (Set-oriented Mining)**: Studied this algorithm for efficient mining of frequent itemsets.
+   - **FP-Growth (Frequent Pattern Growth)**: Learned about this advanced algorithm that efficiently finds frequent itemsets without candidate generation.
+
+2. **Apriori Algorithm**:
+   - **Concept**: Acquired knowledge on the Apriori algorithm, which uses a breadth-first search strategy to find frequent itemsets and generate association rules.
+   - **Implementation**:
+     - Calculated key metrics to apply the Apriori algorithm:
+       - **Support**: Frequency of itemsets appearing in transactions.
+       - **Confidence**: Likelihood that an item is purchased when another item is purchased.
+       - **Lift**: Ratio of observed support to expected support, indicating the strength of association.
+
+3. **Application**:
+   - Applied the Apriori algorithm to transactional data to identify frequent itemsets and generate actionable association rules.
+   - Used the calculated metrics (support, confidence, lift) to evaluate and interpret the strength and significance of the discovered associations.
                             """)
               st.write("----")                            
               with st.container(border = True):
-                            col1, col2 = st.columns(2)
+                            col1, col2 = st.columns(2,gap = 'large')
                             with col1:
                                         
                                         st.write("**7. Using Apriori Algorithm For Coffe Recommendation** ")
@@ -632,7 +681,7 @@ This is my overall SQL journey.
                                         st.video(r"apriori.mp4")
                                         st.write("---")
                                         st.markdown("""
-                                                [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                                                [GitHub link](https://github.com/Kamruzzamansust/AprioriAlgorithm-Product-Recommendation-Streamlit-App)
                                                 
                                                     """)
                                         
@@ -641,13 +690,11 @@ This is my overall SQL journey.
                                         st.markdown("""
                             ##### Project Description
 
-                            I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
-
-                            - **Dynamic Parameters:** Show top customers by sales.
-                            - **Advanced DAX Functions:** Enhance insights with complex measures.
-                            - **Context Transition:** Use `CALCULATE()` for precise analysis.
-
-                            This project showcases my skills in data visualization and strategic insights.
+   - **Objective**: Utilize the Apriori algorithm to recommend coffee products based on associations found in transactional data.
+   - **Application**:
+     - Analyzed transactional data to find frequent itemsets related to coffee.
+     - Generated association rules to recommend coffee products that are often purchased together.
+     - Interpreted the results to provide relevant coffee recommendations based on customer purchase behavior.
                             """)
                                         
 
@@ -708,19 +755,33 @@ This journey has deepened my understanding of deep learning and equipped me with
                     st.write("1.Hands On Tensorflow and Keras")
                     st.video(r"Tensorflow.mp4")
                     st.write("---")
-                    st.markdown("[GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)")
+                    st.markdown("[GitHub link](https://colab.research.google.com/drive/1zDhYWfpiJGptkWrjrzHPrF_ZOK7G8yl7?userstoinvite=raimaadhikary4%40gmail.com&sharingaction=manageaccess&role=writer#scrollTo=q3e9l15TNYk5)")
                     st.write('---')
             with st.container(border = True):
                 st.markdown("""
             ##### Project Description
 
-            I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+**Objective**: Implement comprehensive workflows for building and training deep learning models using TensorFlow.
 
-            - **Dynamic Parameters:** Show top customers by sales.
-            - **Advanced DAX Functions:** Enhance insights with complex measures.
-            - **Context Transition:** Use `CALCULATE()` for precise analysis.
+**Approach**:
 
-            This project showcases my skills in data visualization and strategic insights.
+1. **Model Creation**:
+   - **Sequential Model**: Built simple linear stacks of layers using the Sequential API.
+   - **Functional API**: Created complex architectures with shared layers and branching using the Functional API.
+   - **Model Subclassing**: Implemented custom models by subclassing the `tf.keras.Model` class for greater flexibility.
+
+2. **Model Compilation**:
+   - Specified loss functions, optimizers, and metrics.
+   - Experimented with different configurations to optimize model performance.
+
+3. **Model Training**:
+   - Utilized various training techniques, including early stopping and learning rate schedules.
+   - Implemented callbacks for monitoring and improving training processes.
+
+4. **Deep Learning Concepts**:
+   - Applied concepts like batch normalization, dropout, and advanced optimizers (e.g., Adam, RMSprop) in model creation.
+   - Used techniques such as data augmentation to improve model generalization.
+
             """)
                     
               #st.write("----")
@@ -786,15 +847,21 @@ This journey has equipped me with foundational skills in R and R Shiny, setting 
                 with col2:
                     
                     st.markdown("""
-        ##### Project Description
+       
+**Objective**: Develop an interactive web app to display available rental properties on a map based on user preferences.
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+**Approach**:
+1. **App Features**:
+   - **UI Inputs**: Included controls for users to filter houses based on criteria like price range, number of bedrooms, and location.
+   - **Dynamic Map**: Displayed available rental properties on an interactive map.
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+2. **Interactivity**:
+   - **Real-Time Filtering**: Users can adjust filters to update the map view dynamically.
+   - **Property Details**: Provided additional information about each property on map markers.
 
-        This project showcases my skills in data visualization and strategic insights.
+3. **Visualization**:
+   - Integrated mapping tools to visualize property locations.
+   - Enhanced user experience with a clear and intuitive interface.
         """)
                     
               st.write("----")
@@ -816,13 +883,21 @@ This journey has equipped me with foundational skills in R and R Shiny, setting 
                     st.markdown("""
         ##### Project Description
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+1. **Dashboard Features**:
+   - **Movie Listings**: Users can browse through a list of movies.
+   - **Filters**:
+     - **Type**: Filter by movies, shows, etc.
+     - **Category**: Select specific genres or categories.
+     - **Country**: Choose movies based on country of origin.
+     - **Release Date**: Narrow down movies by release year or range.
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+2. **Interactivity**:
+   - Real-time updates as users apply different filters.
+   - User-friendly interface for seamless navigation.
 
-        This project showcases my skills in data visualization and strategic insights.
+3. **Visualization**:
+   - Displays movie details and statistics.
+   - Enhances data exploration with interactive elements.
         """)
               st.write("-----")
               project_overview("Simple Sales Dashboard with R shiny",
@@ -831,11 +906,27 @@ This journey has equipped me with foundational skills in R and R Shiny, setting 
                                """
                                ##### Project Description
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+1. **Technology Stack**:
+   - **R and Shiny**: For building the dashboard.
+   - **bs Library**: Utilized for creating a responsive and structured layout.
+   - **DT Library**: Used to display interactive tables.
+   -use ggplot2 for visualization 
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+2. **Dashboard Features**:
+   - **Visualizations**:
+     - Graphs showing total profits month by month.
+     - Product sales analysis through bar charts.
+   - **Tables**:
+     - Interactive tables to display detailed sales data.
+
+3. **Interactivity**:
+   - Implemented UI elements for filtering data based on different criteria.
+   - Real-time updates as filters are applied.
+
+4. **Visualization**:
+   - Enhanced understanding of sales trends and performance.
+   - Provided insights into product sales and profitability.
+
 
         This project showcases my skills in data visualization and strategic insights.
         """
@@ -891,7 +982,7 @@ This journey helped me create interactive and visually appealing dashboards with
                     st.video(r"ipl.mp4")
                     st.write("---")
                     st.markdown("""
-                            [GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)
+                            [GitHub link](https://github.com/Kamruzzamansust/IPL-Dashboard-With-Plotly-Dash)
                             
                                 """)
                     
@@ -899,14 +990,24 @@ This journey helped me create interactive and visually appealing dashboards with
                     
                     st.markdown("""
         ##### Project Description
+**Objective**: Develop a multipage dashboard to visualize and analyze various statistics related to IPL matches, including individual performance metrics for batsmen and bowlers.
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+**Approach**:
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+1. **Technology Stack**:
+   - **Python**: Utilized Python for backend data processing and logic implementation.
+   - **Plotly Dash**: Created interactive and dynamic visualizations using Plotly Dash to build the multipage dashboard.
 
-        This project showcases my skills in data visualization and strategic insights.
+2. **Dashboard Features**:
+   - **Multipage Layout**: Designed a dashboard with multiple pages to categorize and present different aspects of IPL data.
+   - **Match Statistics**: Visualized various statistics related to IPL matches, such as match outcomes, scores, and team performance.
+   - **Batsman Statistics**: Provided detailed statistics on individual batsmen, including runs scored, strike rates, and other performance metrics.
+   - **Bowler Statistics**: Showcased individual bowler statistics, including wickets taken, economy rates, and other relevant metrics.
+
+3. **Visualization**:
+   - Created interactive charts and graphs to display performance metrics and match statistics.
+   - Enabled users to explore and analyze data through various filters and views.
+        
         """)
                     
               st.write("----")
@@ -919,7 +1020,7 @@ This journey helped me create interactive and visually appealing dashboards with
                     st.video(r"Dash.mp4")
                     st.write("---")
                     st.markdown("""
-                            [GitHub link](https://github.com/Kamruzzamansust/healthcare-data-analysis-Power-bi)
+                            GitHub link--> As file Size is Large can't Push to github
                             
                                 """)
                     
@@ -928,13 +1029,25 @@ This journey helped me create interactive and visually appealing dashboards with
                     st.markdown("""
         ##### Project Description
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+**Objective**: Develop a multipage dashboard to analyze sales data from Adventure Works, providing dynamic insights and interactive exploration.
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+**Approach**:
 
-        This project showcases my skills in data visualization and strategic insights.
+1. **Technology Stack**:
+   - **Python**: Used for data processing and logic.
+   - **Plotly Dash**: Built an interactive and responsive dashboard.
+
+2. **Dashboard Features**:
+   - **Multipage Layout**: Organized into multiple pages for different aspects of sales analysis.
+   - **Dynamic Insights**: Visualized key sales metrics and trends, such as revenue, product performance, and customer demographics.
+
+3. **Interactivity**:
+   - **UI Widgets**: Implemented four interactive widgets to allow users to dynamically change views and filter data.
+   - **User Controls**: Enabled selection of time frames, product categories, regions, and other relevant filters.
+
+4. **Visualization**:
+   - Created engaging charts and graphs to display sales insights.
+   - Provided detailed views and summaries for deeper analysis.
         """)
               st.write("----")
                     
@@ -942,12 +1055,12 @@ This journey helped me create interactive and visually appealing dashboards with
                  col1, col2 = st.columns(2)
                  with col1:
                     
-                    st.write("2. Youtube  Data Visualization with Python Plotly Dash ")
+                    st.write("2. Youtube Data Visualization with Python Plotly Dash ")
                     #st.write("----")
                     st.video(r"Youtube.mp4")
                     st.write("---")
                     st.markdown("""
-                            [GitHub link](https://github.com/Kamruzzamansust/healthcare-data-analysis-Power-bi)
+                            [GitHub link](https://github.com/Kamruzzamansust/Youtube-analysis-with-dash)
                             
                                 """)
                     
@@ -957,13 +1070,24 @@ This journey helped me create interactive and visually appealing dashboards with
                                 
         #### Project Description
 
-        I used Adventure Works sales data to create an interactive Power BI dashboard. Key features:
+**Objective**: Build a multipage dashboard to analyze YouTube data, highlighting trends and patterns with interactive elements.
 
-        - **Dynamic Parameters:** Show top customers by sales.
-        - **Advanced DAX Functions:** Enhance insights with complex measures.
-        - **Context Transition:** Use `CALCULATE()` for precise analysis.
+**Approach**:
 
-        This project showcases my skills in data visualization and strategic insights.
+1. **Technology Stack**:
+   - **Python and Plotly Dash**: Used for developing the interactive dashboard.
+
+2. **Dashboard Features**:
+   - **Multipage Layout with Tabsets**: Organized data into tabbed sections for easy navigation between different analytics areas.
+   - **Trend Analysis**: Displayed various YouTube analytics trends, such as views, engagement, and subscriber growth.
+
+3. **Interactivity**:
+   - **UI Inputs**: Included dropdowns, sliders, and a date range picker for users to customize data views.
+   - **Dynamic Filtering**: Allowed users to explore data based on time periods, categories, and more.
+
+4. **Visualization**:
+   - Created detailed visualizations to represent key metrics and trends.
+   - Enabled users to gain insights into video performance and audience behavior.
                                 
         """)
                     
@@ -1137,6 +1261,23 @@ In this stage of my NLP journey, I've explored the following concepts:
                                 r"NLP1.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/1CQH2w15evItQVXFQqI5NpvjGYiVboAhf#scrollTo=P6IronP9qrg7)",
                                 """
+**Objective**: Learn and implement text cleaning techniques and word embedding methods to perform sentiment analysis on Twitter data.
+
+**Approach**:
+
+1. **Text Cleaning**:
+   - Applied various techniques such as tokenization, stop-word removal, stemming, and lemmatization.
+   - Handled special characters, URLs, and emojis specific to Twitter data.
+   - Utilized **NLTK** and **spaCy** libraries for advanced text processing tasks.
+
+2. **Word Embedding Techniques**:
+   - **Frequency-Based**: Utilized methods like TF-IDF and Count Vectorizer for representing text data.
+   - **Deep Learning-Based**: Implemented embeddings like Word2Vec and GloVe for capturing semantic meanings.
+
+3. **Twitter Sentiment Analysis**:
+   - Collected and preprocessed Twitter data.
+   - Built and trained models to classify sentiment as positive, negative, or neutral.
+   - Evaluated model performance using accuracy, precision, and recall metrics.
                                     
            
             """
@@ -1147,6 +1288,22 @@ In this stage of my NLP journey, I've explored the following concepts:
                                 r"NLP2.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/1DO1H39HiFiFmU1Z-uJaYwlENEpxqoAav#scrollTo=8t1w7p8cu3Al)",
                                 """
+1. **Core Components**:
+   - **Attention Mechanism**: Studied how attention allows the model to focus on relevant parts of the input sequence.
+   - **Self-Attention**: Learned how self-attention captures dependencies within a sequence.
+   - **Multihead Attention**: Examined how multiple attention heads improve representation learning.
+
+2. **Architecture Details**:
+   - **Encoder-Decoder**: Analyzed how the encoder processes inputs and how the decoder generates outputs.
+   - **Residual Connections**: Understood their role in improving gradient flow and network stability.
+   - **Layer Normalization**: Investigated how it stabilizes training and accelerates convergence.
+
+3. **Additional Components**:
+   - **Softmax**: Learned its use in transforming attention scores into probabilities.
+   - **Feedforward Neural Network**: Explored its role in processing the output of the attention mechanism.
+
+4. **Decoding Process**:
+   - Studied how the decoder creates a context vector and uses it to generate sequences.
                                     
            
             """)
@@ -1156,7 +1313,27 @@ In this stage of my NLP journey, I've explored the following concepts:
                                  r"NLP3.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/1dLbRS5BPRyswrhkv0wv7WcvFgcPRC3hP#scrollTo=fnnfAaKCIcDt)",
                                 """
-                                    
+                                   **Objective**: Develop a detailed, object-oriented representation of the Transformer architecture, incorporating its key components to understand its inner workings better.
+
+**Approach**:
+
+1. **Core Components**:
+   - **Self-Attention Mechanism**: Created a class to model the self-attention mechanism, which includes splitting heads, computing attention scores, and applying the attention weights.
+   - **Multihead Attention**: Implemented as a separate class to manage multiple self-attention heads, combining their outputs and applying a final linear transformation.
+   - **Feedforward Neural Network**: Modeled as a class to handle position-wise feedforward operations after the attention mechanism.
+   - **Residual Connections**: Incorporated as part of the layer classes to add input to the output of the transformations, enhancing gradient flow and stability.
+   - **Layer Normalization**: Added normalization layers to stabilize training by normalizing the inputs of each layer.
+
+2. **Architecture Details**:
+   - **Encoder**: Developed an encoder class consisting of multiple layers of multihead attention followed by feedforward neural networks, each with residual connections and layer normalization.
+   - **Decoder**: Designed a decoder class with similar layers as the encoder but with additional cross-attention layers to incorporate encoder outputs, enabling the generation of sequences.
+
+3. **Additional Features**:
+   - **Positional Encoding**: Incorporated positional encoding to add sequence information to the embeddings.
+   - **Embedding Layer**: Created an embedding class to transform input tokens into dense vectors.
+
+4. **Implementation**:
+   - Used Object-Oriented Programming principles to design modular and reusable components. 
            
             """)
         with st.expander("**NLP INtermediate**"):
@@ -1165,6 +1342,32 @@ In this stage of my NLP journey, I've explored the following concepts:
                                  r"BERT1.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/1edixmSMEUSPj6eO5V1_xLExkYwgeqQIr#scrollTo=qQDChvozM1QJ)",
                                 """
+**Objective**: Gain a deep understanding of various types of LLMs, their training objectives, and specific implementations like BERT and its variants.
+
+**Approach**:
+
+1. **Types of LLMs Based on Training Objectives**:
+   - **Autoregressive Models**: Models that predict the next token in a sequence given the previous tokens. Example: GPT series.
+   - **Autoencoding Models**: Models that learn to reconstruct the input from a corrupted version of it. Example: BERT.
+   - **Sequence-to-Sequence (Seq2Seq) Models**: Models designed to transform one sequence into another. Example: T5.
+   - **Hybrid Models**: Models that combine aspects of autoregressive and autoencoding objectives. Example: T5, which can perform both generation and understanding tasks.
+
+2. **BERT Workflow**:
+   - **Masked Language Modeling (MLM)**: Understood how BERT predicts masked tokens in a sentence.
+   - **Next Sentence Prediction (NSP)**: Studied how BERT learns to predict whether one sentence follows another.
+   - **Special Tokens**: Explored the role of tokens like `[CLS]` for classification and `[SEP]` for separating segments.
+
+3. **Utilizing Transformers Library**:
+   - **Pipelines**: Learned to use the Transformers library’s pipeline for various tasks like text classification, named entity recognition, and question answering.
+   - **Loading Pretrained Models**: Practiced loading and fine-tuning pretrained models from the Transformers library.
+
+4. **Exploring BERT Variants**:
+   - **RoBERTa**: Investigated improvements and differences from BERT, focusing on training without NSP.
+   - **ALBERT**: Studied the parameter reduction techniques and their impact on model performance and efficiency.
+   - ElECTRA , DistilBERT and more 
+
+**Outcome**:
+This notebook provided a thorough theoretical understanding of LLMs, focusing on the mechanics of BERT and its variants, and practical experience with the Transformers library. It facilitated an in-depth exploration of model types, objectives, and advanced variations.
                                     
            
             """)
@@ -1173,7 +1376,30 @@ In this stage of my NLP journey, I've explored the following concepts:
                                  r"BERTMASKED.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/18lG5UvQ8N1djCeHDwXV9d6zEUhnYgoyQ#scrollTo=qdHfE77rCBLs)",
                                 """
-                                    
+                                  **Objective**: Gain a comprehensive understanding of masked modeling with BERT, including its pretraining tasks, application of various techniques, and comparison with other models.
+
+**Approach**:
+
+1. **Masked Modeling in BERT**:
+   - **Understanding BERT's Tasks**: Explored BERT's pretraining tasks, including Masked Language Modeling (MLM) and Next Sentence Prediction (NSP).
+   - **BERT Tokenizer**: Utilized the BERT tokenizer from the Transformers library to preprocess text data.
+   - **Attention Mask and Mask Index**: Learned how attention masks and mask indices work in the context of BERT's training and prediction.
+
+2. **Model Application**:
+   - **Logits and Softmax**: Analyzed the model's output logits and applied the softmax function to obtain probabilities.
+   - **Top-K**: Understood how to extract the top-k predictions from the model's output.
+   - **Pretrained Model**: Applied the pretrained model `deepset/bert-base-cased-squad2` for specific tasks like question answering.
+
+3. **Advanced Techniques**:
+   - **Cosine Similarity**: Implemented cosine similarity to measure semantic similarity between text embeddings.
+   - **Semantic Search**: Explored techniques for semantic search using BERT embeddings.
+
+4. **Additional Models and Methods**:
+   - **Sentence Transformers**: Utilized sentence transformers to encode sentences and improve similarity measures.
+   - **Text Generation with GPT-2**: Investigated text generation capabilities using GPT-2, including methods like greedy search and beam search.
+
+**Outcome**:
+This notebook provided an in-depth exploration of masked modeling with BERT, covering key concepts and techniques. By using the Transformers library, pretrained models, and additional methods, the project enhanced understanding of BERT's functionality and compared it with other models like GPT-2 for various NLP tasks.  
            
             """)
               st.write("---")
@@ -1181,7 +1407,36 @@ In this stage of my NLP journey, I've explored the following concepts:
                                  r"BERT2.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/1rM0prvLLajG81bZew8bhykjTtiQ2pqEU#scrollTo=iravzBml_Dvu)",
                                 """
-                                    
+**Approach**:
+                                
+1. **Setup and Initialization**:
+   - **Transformers Library**: Utilized the `transformers` library for working with BERT.
+   - **BERT Tokenizer and Model**: Initialized the BERT tokenizer and loaded the `bert-base-cased` model.
+
+2. **Data Preparation**:
+   - **Load Data**: Imported the dataset using Pandas.
+   - **Custom Dataset**: Defined a custom dataset class for PyTorch to handle the tokenization and formatting of text data.
+   - **Data Loaders**: Created data loaders for training and validation, splitting the dataset accordingly.
+   - **Constants**: Set constants such as `MAX_LEN` (maximum sequence length) and `BATCH_SIZE`.
+
+3. **Model Training Setup**:
+   - **Model Loading**: Loaded the BERT model with a classification head.
+   - **Optimizers and Schedulers**: Defined optimizers and learning rate schedulers for training.
+   - **Loss Function**: Set up the loss function for classification.
+
+4. **Training Process**:
+   - **Training Functions**: Created functions for training the model, including forward pass, loss computation, and backpropagation.
+   - **Evaluation Function**: Developed a function to evaluate model performance on the validation set.
+   - **Training Loop**: Implemented the training loop to iterate over epochs, perform training and validation, and track metrics.
+
+5. **Post-Training Analysis**:
+   - **Plot Metrics**: Visualized training and validation metrics to assess model performance.
+   - **Prediction Function**: Created a function to make predictions with the fine-tuned model.
+   - **Confusion Matrix**: Generated and displayed a confusion matrix to evaluate classification performance.
+
+6. **Model Saving and Loading**:
+   - **Save Model**: Saved the fine-tuned model for future use.
+   - **Load Model**: Reloaded the model for making predictions on new data.  
            
             """)
               st.write("---")
@@ -1189,15 +1444,59 @@ In this stage of my NLP journey, I've explored the following concepts:
                                  r"BERT3.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/1qvcFj94l4-IrQ17X2tkoMwdE4RV8e96l#scrollTo=3uJ90BUf9gU1)",
                                 """
-                                    
+           **Objective**: Fine-tune the DistilBERT model for text classification using BBC text data from Kaggle.
+
+**Approach**:
+
+1. **Setup and Initialization**:
+   - **Libraries**: Utilized the `transformers`, `torch`, and `accelerate` libraries for model training and evaluation.
+   - **Dataset**: Loaded the BBC text dataset from Kaggle.
+
+2. **Data Preparation**:
+   - **Data Splitting**: Divided the dataset into training and test sets.
+   - **Tokenization**: Tokenized the text data using the DistilBERT tokenizer.
+
+3. **Model Definition**:
+   - **DistilBERT**: Used the `distilbert-base-uncased` model for text classification.
+   - **Data Class**: Created a custom data class to handle the tokenized data.
+
+4. **Training Setup**:
+   - **TrainingArguments**: Configured training parameters using `TrainingArguments()`.
+   - **Trainer**: Employed the `Trainer()` class to manage the training process.
+
+5. **Training and Evaluation**:
+   - **Training**: Fine-tuned the DistilBERT model on the training set.
+   - **Evaluation**: Evaluated the model’s performance on the test set.
+
+6. **Model Management**:
+   - **Saving Model**: Saved the fine-tuned model for future use.
+   - **Loading and Prediction**: Loaded the saved model and made predictions on new data.
+                         
            
             """)
               st.write("---")
-              project_overview("5. **Create Api With Fast Api for Streamlit and httr for R shiny** ",
+              project_overview("5. **Integration of Fine-Tuned DistilBERT Model with FastAPI and R Shiny** ",
                                  r"finetune.mp4",
-                                "[LINK NEED]",
+                                "[GITHUB Link](https://github.com/Kamruzzamansust/Fine-tune-DistilBERT-for-Text-Classification)",
                                 """
-                                    
+
+
+**Objective**: Develop an interactive web application that utilizes the fine-tuned DistilBERT text classification model through a FastAPI backend and an R Shiny frontend.
+
+**Approach**:
+
+1. **API Development**:
+   - **FastAPI**: Created an API using FastAPI to serve the fine-tuned DistilBERT model for text classification. This API handles text input, performs classification, and returns the results.
+
+2. **Web Application Development**:
+   - **R Shiny UI**: Designed a user interface with R Shiny to allow users to input text and view classification results.
+   - **API Integration**: Utilized the `httr` library in R to make requests to the FastAPI endpoint from the Shiny app. This integration enables real-time interaction with the model.
+
+3. **Workflow**:
+   - **Text Input**: Users input text into the Shiny web app.
+   - **API Call**: The Shiny app sends the text to the FastAPI endpoint.
+   - **Model Prediction**: The FastAPI backend uses the fine-tuned DistilBERT model to classify the text.
+   - **Display Results**: The classification results are returned to the Shiny app and displayed to the user.                        
            
             """)
               st.write("---")
@@ -1205,23 +1504,68 @@ In this stage of my NLP journey, I've explored the following concepts:
                                  r"QA.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/1LrWV8ugDtLqozeNmjnVWnjGgraAG3eq0#scrollTo=EhCpzkFcb0mW)",
                                 """
-                                    
+**Objective**: Understand open-domain and closed-domain question answering and implement a QA system using BERT.
+
+**Approach**:
+
+1. **Domain Understanding**:
+   - **Open-Domain**: Answer questions from a large, unstructured dataset.
+   - **Closed-Domain**: Answer questions from a specific, predefined set of documents.
+
+2. **QA with BERT**:
+   - **Model and Tokenizer**: Imported `BertForQuestionAnswering` from the `transformers` library.
+   - **Initialization**: Used `bert-large-uncased-whole-word-masking-finetuned-squad` model.
+   - **Example Setup**:
+     - Created a sample question.
+     - Provided reference text from which the answer will be extracted.
+
+3. **Process**:
+   - **Tokenization**: Performed tokenization on the input text.
+   - **Indexing**: Found token indices for question and context.
+   - **Segment Embeddings**: Created segment embeddings to differentiate between question and context.
+   - **Model Scoring**: Obtained model scores for start and end positions.
+   - **Extract Answer**: Identified and returned the answer based on scores.                        
            
             """)
               st.write("---")
-              project_overview("7. Text Summarization Transfer Learning With GPT-2, google-pegasus,T5",
+              project_overview("7. Text Summarization using Transfer Learning With GPT-2, google-pegasus,T5",
                                  r"Text_Summarization_simple.mp4",
                                 "[COLAB link](https://colab.research.google.com/drive/1WNG2ZVvSBpuK3ZBEFCm8b1SV1Y1os1NY#scrollTo=LFEy_b0FU4U4)",
                                 """
-                                    
+**Objective**: Implement text summarization using advanced models and evaluate with BLEU metric.
+
+**Models Used**:
+- **GPT-2**
+- **Google PEGASUS**
+- **T5**
+
+**Approach**:
+1. **Model Selection**: Utilized transfer learning with pre-trained models for effective summarization.
+2. **Implementation**: 
+   - Fine-tuned models on specific datasets.
+   - Generated summaries for given text inputs.
+3. **Evaluation**:
+   - Calculated the BLEU metric to assess the quality of generated summaries.   
            
             """)
               st.write("---")
               project_overview("8. **Question Answering With BERT** ",
                                  r"Bert_qa_model.mp4",
-                                "As File Size size Large can't push to Github",
+                                "[GTHUB Link](https://github.com/Kamruzzamansust/Q_A-with-BERT)",
                                 """
-                                    
+
+
+**Objective**: Develop a user-friendly application for question answering using BERT.
+
+**Features**:
+- **User Input**:
+  - Text area for reference text input.
+  - Text input for user questions.
+  
+- **Functionality**:
+  - Utilizes BERT model to extract answers from the provided text.
+  - Displays the answer based on user queries.
+                        
            
             """)
               st.write("---")
