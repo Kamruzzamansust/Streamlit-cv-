@@ -1579,6 +1579,64 @@ This notebook provided an in-depth exploration of masked modeling with BERT, cov
                                     
            
             """)
+             st.write("---")
+             project_overview("2. **Document Translation App with Retrival Chain** ",
+                                 r"Cota_rag.mp4",
+                                 
+                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                """
+                                    
+           
+            """)
+             st.write("---")
+             project_overview("3. **Scraping Youtube Comment and Perform Sentiment Analysis with** ",
+                                 r"Youtube Comment Sentiment analysis.mp4",
+                                 
+                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                """
+                                    
+           
+            """)
+             st.write("---")
+             project_overview("4. **Movie Recommendation using Large Language Model and Langchain** ",
+                                 r"Movie_llm.mp4",
+                                 
+                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                """
+                                    
+           
+            """)
+             st.write("---")
+             project_overview("5. **Chat with pdf Gemini LLM** ",
+                                 r"Chat_with_pdf_gemini.mp4",
+                                 
+                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                """
+                                    
+           
+            """)
+             st.write("---")
+             project_overview("6. **Fine Tune BERT for Custom Dataset** ",
+                                 r"fine tune-1.mp4",
+                                 
+                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                """
+                                    
+           
+            """)
+             st.write("---")
+             project_overview("6. **Serach relevent Information from Faiss Vectore Databse** ",
+                                 r"FIASSINDEXSEARCH.mp4",
+                                 
+                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                """
+                                    
+           
+            """)
+
+
+
+
     elif selected2 == "Time Series":
          markdown_writting("**:blue-background[Click to See  My Overall Time Series Learning journey]**",'''
         # Time Series Analysis: Phase 1 - Statistical Approach
@@ -1642,12 +1700,139 @@ This notebook provided an in-depth exploration of masked modeling with BERT, cov
 
 
                           ''')
-         
+         st.write("**<<Time Series Projects>>**")
+         #with st.expander("**Statistical Time seriers**"):
              
+         #st.write("**<<NLP Projects>>**")
+         with st.container(border = True):
+                project_overview("1. **Statistical Time Series Analysis** ",
+                                r"Timeseries1.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1neUHTEVZwXrvUie86aiP9FIthaT6mDE7#scrollTo=B25ABrKNbYwK)",
+                                """
+
+
+## Introduction
+This project aims to provide a comprehensive exploration of time series analysis using statistical methods. The notebook covers the fundamental concepts of time series, including its components, stationarity, autocorrelation, and various forecasting techniques.
+
+## Objectives
+1. **Understand Time Series:**
+   - Define what time series data is.
+   - Identify and explain the components of time series data: trend, seasonality, and variation.
+   - Determine and understand random walks in time series data.
+
+2. **Stationarity:**
+   - Explain the concept of stationarity in time series analysis.
+   - Conduct tests for stationarity using the Augmented Dickey-Fuller (ADF) test.
+
+3. **Autocorrelation:**
+   - Measure and interpret autocorrelation using the Autocorrelation Function (ACF).
+   - Analyze the Partial Autocorrelation Function (PACF).
+
+4. **Decomposition:**
+   - Decompose time series into its components (trend, seasonality, and residuals) to better understand the underlying patterns.
+
+5. **Forecasting Techniques:**
+   - Implement and compare different forecasting methods:
+     - **Naive Methods:** Use observation values directly or average over previous observations.
+     - **Moving Averages (MA):** Smooth the time series by averaging over a specified number of past observations.
+     - **Exponential Smoothing:** Apply weighting to past observations, giving more importance to recent values.
+     - **Autoregressive Moving Average (ARMA):** Combine autoregressive and moving average models for forecasting.
+     - **Autoregressive Integrated Moving Average (ARIMA):** Extend ARMA to include differencing for stationarity.
+     - **Seasonal ARIMA (SARIMA):** Incorporate seasonality into ARIMA models.
+     - **Seasonal ARIMA with Exogenous Variables (SARIMAX):** Include external predictors in SARIMA models.
+     - **Vector Autoregression (VAR):** Model multiple time series variables simultaneously.
+
+
+                                    
            
-             
-            
-              
+            """
+
+                                )
+                st.write('---')
+                project_overview("2. **Time Series Forecasting With Machine Learning ** ",
+                                r"Timeseries2.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1yUVM7Zwhah91r1OjVljXaThpOADAB0bS)",
+                                """
+
+
+## Introduction
+This project explores time series analysis using machine learning techniques. The notebook demonstrates how to apply simple linear regression for univariate forecasting, enhance the model with autoregressive components, and leverage advanced techniques like Gradient Boosting and LightGBM with hyperparameter tuning.
+
+## Objectives
+1. **Simple Linear Regression:**
+   - Implement a univariate linear regression model to forecast CO2 levels based on months.
+   - Initial results: Train R² score = 0.90, Test R² score = 0.34.
+   
+2. **Enhancing the Model with Autoregressive Components:**
+   - Perform feature engineering to include monthly seasonality, yearly trend, and five autoregressive lagged variables.
+   - Fit and evaluate the enhanced linear regression model.
+   - Final results: Train R² score = 0.998, Test R² score = 0.990.
+
+3. **Advanced Machine Learning Techniques:**
+   - Apply Gradient Boosting and LightGBM for forecasting traffic volume.
+   - Perform hyperparameter tuning using Bayesian optimization techniques on both XGBoost and LightGBM.
+
+
+
+                                    
+           
+            """
+
+                                )
+                st.write('---')
+                project_overview("3. **Deep Learning For Time Series Forecasting** ",
+                                r"Time series3.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1a5N2A10M88rtdc6ekiE6JXdLRL37lcDJ)",
+                                """
+
+
+## Introduction
+This project explores time series analysis using deep learning techniques, specifically Long Short-Term Memory (LSTM) networks. The notebook demonstrates how to apply LSTM for univariate single-step and multistep forecasting, as well as multivariate multistep forecasting.
+
+## Objectives
+1. **Univariate Single-Step Forecasting with LSTM:**
+   - Define a function to prepare univariate data for LSTM.
+   - Train the model on the past 48 hours of data to forecast the 49th hour.
+   - Implement early stopping and checkpointing to save model weights when minimum loss is reached.
+   
+2. **Univariate Multistep Forecasting with LSTM:**
+   - Forecast the next ten steps by taking the last 48 hours of training data and predicting one step at a time.
+   - Evaluate model performance using Mean Absolute Percentage Error (MAPE).
+   
+3. **Bi-Directional LSTM:**
+   - Implement and evaluate bi-directional LSTM for improved forecasting accuracy.
+   
+4. **Multivariate Multistep Forecasting with LSTM:**
+   - Apply LSTM for multivariate multistep forecasting.
+   - Evaluate model performance using various metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), MAPE, and R² score.
+
+
+                                    
+           
+            """
+
+                                )
+                st.write('---')
+                project_overview("4. **Facebook Prophet and Neural Prophet in Time Series** ",
+                                r"Timeseries4.mp4",
+                                "[COLAB link](https://colab.research.google.com/drive/1iH1WIgMuc6G4qd35HoU8a9Y5sjpU6hhA)",
+                                """
+
+
+## Introduction
+This project explores time series forecasting using Facebook Prophet and Neural Prophet. The notebook demonstrates how to apply different growth models, incorporate holidays, and leverage both Prophet and Neural Prophet for accurate time series forecasting.
+
+## Objectives
+1. **Facebook Prophet:**
+   - Implement Prophet for time series forecasting.
+   - Apply different growth models: logistic growth and linear growth.
+   - Incorporate various holidays into the forecasting model to capture seasonality and holiday effects.
+
+2. **Neural Prophet:**
+   - Implement the Neural Prophet model for time series forecasting.
+   - Apply similar growth models and holiday effects as with Facebook Prophet.
+   - Evaluate and compare its performance with the Prophet model
+ """) 
       
 
 
