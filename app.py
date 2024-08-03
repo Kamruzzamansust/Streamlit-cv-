@@ -1576,25 +1576,86 @@ This notebook provided an in-depth exploration of masked modeling with BERT, cov
                                  
                                 "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
                                 """
-                                    
+ **Introduction**: This project is a Retrieval-Augmented Generation (RAG) application designed to answer questions about the Constitution of Bangladesh. The application utilizes a combination of a language model (LLM) and a vector database to fetch relevant information from the text of the constitution.
+
+ **Approach**
+
+ **PDF Loading and Text Splitting**
+
+- **PDF Loader**: The `PyPDFLoader` is used to load the PDF document of the Constitution of Bangladesh.
+- **Text Splitter**: The text is split into manageable chunks using the `CharacterTextSplitter` to facilitate efficient embedding and retrieval.
+
+**Embeddings and Vector Database**
+
+- **Embeddings**: The `HuggingfaceEmbeddings` are used to convert text chunks into vector representations.
+- **Vector Database**: `FAISS` (Facebook AI Similarity Search) is employed to store and retrieve these vector embeddings, allowing for efficient search and retrieval of relevant text chunks.
+
+**Language Model**
+
+- **LLM Model**: The `gemini-1.5-flash` model is used for generating responses based on the retrieved information from the vector database.
+
+**User Interface**
+
+- **Streamlit**: The user interface is built with Streamlit, providing an easy-to-use web interface where users can input their questions. The retrieved information is then displayed using `st.markdown()` for formatted text output.                        
            
             """)
              st.write("---")
              project_overview("2. **Document Translation App with Retrival Chain** ",
                                  r"Cota_rag.mp4",
                                  
-                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                "[Github Link](https://github.com/Kamruzzamansust/Document-Translation-App-with-Retrival-Chain)",
                                 """
-                                    
+            **Introduction**: This project is designed to analyze YouTube transcripts of videos related to student protests in Bangladesh. The application leverages a combination of language models and vector databases to fetch relevant information from the transcripts.
+
+**Approach**
+
+**YouTube Loading and Text Processing**
+
+- **YouTube Loader**: The `YouTube Loader` from LangChain is used to load the transcripts of YouTube videos related to student protests in Bangladesh.
+- **Text Processing**: The text from the transcripts is processed to facilitate efficient embedding and retrieval.
+
+**Embeddings and Vector Database**
+
+- **Embeddings**: The `HuggingfaceEmbeddings` are used to convert text chunks into vector representations using the model `hkunlp/instructor-large`.
+- **Vector Database**: `FAISS` (Facebook AI Similarity Search) is employed to store and retrieve these vector embeddings, allowing for efficient search and retrieval of relevant text chunks.
+
+**Language Model**
+
+- **LLM Model**: The `gemma-9bit-it` model is used for generating responses based on the retrieved information from the vector database.
+
+**User Interface**
+
+- **Streamlit**: The user interface is built with Streamlit, providing an easy-to-use web interface where users can input their queries. The retrieved information is then displayed using `st.markdown()` for formatted text output.
+
+**Key Features:**
+
+- **YouTube Transcript Extraction**: Utilizing LangChain's YouTube Loader, the app extracts transcripts from YouTube videos.
+- **Fast Processing**: Powered by ChatGrokClass for rapid analysis.
+- **Vector Store**: Implements the Google Gemma-9bit-it model with FAISS for vector storage and retrieval.
+- **User Interface**: Built with Streamlit for an intuitive and interactive user experience.                        
            
             """)
              st.write("---")
-             project_overview("3. **Scraping Youtube Comment and Perform Sentiment Analysis with** ",
+             project_overview("3. **Scraping Youtube Comment and Perform Sentiment Analysis with Open Source LLM** ",
                                  r"Youtube Comment Sentiment analysis.mp4",
                                  
                                 "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
                                 """
-                                    
+            In this project, I leverage the `jamba-instruct` model from AI21 Labs to perform sentiment analysis on YouTube comments. The project involves several key steps:
+
+**Steps Involved**
+
+1. **Scraping YouTube Comments**
+I use `Google App Script` within a Google Sheet to scrape comments from a specific YouTube video. This script allows me to efficiently gather and store the comments directly in a Google Sheet.
+
+2. **Loading Comments for Analysis**
+Once the comments are scraped and stored in the Google Sheet, I extract them for further processing. This step involves reading the data from the Google Sheet to prepare it for sentiment analysis.
+
+3. **Sentiment Analysis with AI21's `jamba-instruct` Model**
+I utilize AI21 Labs' `jamba-instruct` model, an open-source large language model, to perform sentiment analysis on the extracted comments. The `jamba-instruct` model helps classify the sentiment of each comment, determining whether it is positive, negative, or neutral.
+
+**Conclusion**
+By combining the power of Google App Script for data scraping and AI21's advanced language model for sentiment analysis, this project effectively analyzes the sentiment of YouTube comments, providing valuable insights into viewers' reactions.                        
            
             """)
              st.write("---")
