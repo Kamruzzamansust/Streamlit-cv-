@@ -464,7 +464,7 @@ This is my overall SQL journey.
 - Importance of Decision Trees in Ensemble Methods: Random Forest, Bagging, Stacking, Boosting with different Types(Xgboost, Catboost, LightGBM....)
 - Weak Learners in Boosting Algorithms
 
-## Unsupervised Learning
+#### Unsupervised Learning
 - K-Means Clustering
 - Hierarchical Clustering
 - Principal Component Analysis (PCA)
@@ -472,7 +472,7 @@ This is my overall SQL journey.
 - DBSCAN
 - Linear Discriminant Analysis (LDA)
 
-## Outlier Detection (ML Techniques)
+#### Outlier Detection (ML Techniques)
 - Robust Z-Score Method (Statistical Way)
 - Isolation Forest
 - Local Outlier Factor (LOF)
