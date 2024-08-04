@@ -3,7 +3,7 @@ from  streamlit_option_menu import  option_menu
 from streamlit_lottie import st_lottie
 import json
 from function.fun import project_overview ,markdown_writting
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",page_title="Kamruzzaman Portfolio")
 # Set the title of the web app
 
 import streamlit as st
