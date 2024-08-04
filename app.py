@@ -290,7 +290,7 @@ This dashboard provides insights into transportation operations using DAX measur
 - **Time Group Distribution:** Analyze passenger counts at different times of the day.
 - **Bus Utilization:** Assess bus usage efficiency.
 
-To achieve these insights, I used DAX functions such as `CALCULATE()`, `SUMMARIZE()`, `SUMX()`, `TOPN()`, and others.
+To achieve these insights, I used DAX functions such as CALCULATE(), SUMMARIZE(), SUMX(), TOPN(), and others.
         """)
                     
               st.write("----")
@@ -391,7 +391,7 @@ This is my overall SQL journey.
                 st.markdown("""
             ##### Project Description
 
-            I used :orange-background[DVD rental database] Using Postgresql to create a SQL script to analyze the data. Key features:
+            I used DVD rental database Using Postgresql to create a SQL script to analyze the data. Key features:
 
             - Apply Basic Query
             - Uses Of  Join and Subquery 
@@ -582,7 +582,7 @@ In this project, I focused on analyzing Customer Lifetime Value (CLV) with the f
 
 - **Feature Analysis:** Emphasized important features such as recency, average monetary value, and frequency of buying.
 - **RFM Scoring:** Calculated the overall RFM score to evaluate customer value.
-- **Clustering:** Used clustering to categorize customers into `low_ltv`, `mid_ltv`, and `high_ltv` segments.
+- **Clustering:** Used clustering to categorize customers into low_ltv, mid_ltv, and high_ltv segments.
 - **Supervised Learning:** Converted the problem into a supervised ML task and applied a Random Forest classifier.
 - **Hyperparameter Tuning:** Optimized model parameters using hyperparameter tuning.
 - **Model Accuracy:** Achieved an accuracy of 93%..
@@ -616,13 +616,13 @@ In this Implement a regression model to predict outcomes based on input features
    
 2. **Data Handling and Data Manipulation**:
    - Defined schemas and read CSV files into PySpark DataFrames.
-   - Utilized Spark SQL for data selection, filtering, and transformation using `pyspark.sql.functions`.
+   - Utilized Spark SQL for data selection, filtering, and transformation using pyspark.sql.functions.
    -- Applied RDD operations (map, filter, reduce) and User-Defined Functions (UDFs) for initial data processing.
 
 3. **Machine Learning with MLlib**:
    - Implemented regression models and Clustreing using MLlib.
    - Applied featurization, pipelines, transformers, and estimators.
-   - Tuned hyperparameters using `CrossValidator` .
+   - Tuned hyperparameters using CrossValidator .
 
 5. **Key Parameters**:
    - **Ratings**: Created an RDD of ratings, rows, or tuples.
@@ -768,7 +768,7 @@ This journey has deepened my understanding of deep learning and equipped me with
 1. **Model Creation**:
    - **Sequential Model**: Built simple linear stacks of layers using the Sequential API.
    - **Functional API**: Created complex architectures with shared layers and branching using the Functional API.
-   - **Model Subclassing**: Implemented custom models by subclassing the `tf.keras.Model` class for greater flexibility.
+   - **Model Subclassing**: Implemented custom models by subclassing the tf.keras.Model class for greater flexibility.
 
 2. **Model Compilation**:
    - Specified loss functions, optimizers, and metrics.
@@ -794,13 +794,13 @@ This journey has deepened my understanding of deep learning and equipped me with
 
 #### Learning R
 - **Data Manipulation**: 
-  - Used `dplyr` and `tidyverse` for efficient data manipulation
+  - Used dplyr and tidyverse for efficient data manipulation
 - **Handling Variables**:
-  - `forcats` for categorical variables
-  - `stringr` for string operations
-  - `lubridate` for managing date variables
+  - forcats for categorical variables
+  - stringr for string operations
+  - lubridate for managing date variables
 - **Data Visualization**:
-  - Created plots using `ggplot2` for basic visualizations
+  - Created plots using ggplot2 for basic visualizations
 
 #### Exploring R Shiny
 - **UI Components**:
@@ -814,10 +814,10 @@ This journey has deepened my understanding of deep learning and equipped me with
 
 #### Enhancing Shiny Apps
 - **Shiny Dashboard**:
-  - Learning to use the `shinydashboard` package for structured dashboards
+  - Learning to use the shinydashboard package for structured dashboards
 - **Styling**:
-  - Exploring `bslib` for customizable themes
-  - Using the `fresh` library for advanced styling options
+  - Exploring bslib for customizable themes
+  - Using the fresh library for advanced styling options
 
 This journey has equipped me with foundational skills in R and R Shiny, setting the stage for creating dynamic and interactive applications.
 
@@ -1355,7 +1355,7 @@ In this stage of my NLP journey, I've explored the following concepts:
 2. **BERT Workflow**:
    - **Masked Language Modeling (MLM)**: Understood how BERT predicts masked tokens in a sentence.
    - **Next Sentence Prediction (NSP)**: Studied how BERT learns to predict whether one sentence follows another.
-   - **Special Tokens**: Explored the role of tokens like `[CLS]` for classification and `[SEP]` for separating segments.
+   - **Special Tokens**: Explored the role of tokens like [CLS] for classification and [SEP] for separating segments.
 
 3. **Utilizing Transformers Library**:
    - **Pipelines**: Learned to use the Transformers library’s pipeline for various tasks like text classification, named entity recognition, and question answering.
@@ -1388,7 +1388,7 @@ This notebook provided a thorough theoretical understanding of LLMs, focusing on
 2. **Model Application**:
    - **Logits and Softmax**: Analyzed the model's output logits and applied the softmax function to obtain probabilities.
    - **Top-K**: Understood how to extract the top-k predictions from the model's output.
-   - **Pretrained Model**: Applied the pretrained model `deepset/bert-base-cased-squad2` for specific tasks like question answering.
+   - **Pretrained Model**: Applied the pretrained model deepset/bert-base-cased-squad2 for specific tasks like question answering.
 
 3. **Advanced Techniques**:
    - **Cosine Similarity**: Implemented cosine similarity to measure semantic similarity between text embeddings.
@@ -1410,14 +1410,14 @@ This notebook provided an in-depth exploration of masked modeling with BERT, cov
 **Approach**:
                                 
 1. **Setup and Initialization**:
-   - **Transformers Library**: Utilized the `transformers` library for working with BERT.
-   - **BERT Tokenizer and Model**: Initialized the BERT tokenizer and loaded the `bert-base-cased` model.
+   - **Transformers Library**: Utilized the transformers library for working with BERT.
+   - **BERT Tokenizer and Model**: Initialized the BERT tokenizer and loaded the bert-base-cased model.
 
 2. **Data Preparation**:
    - **Load Data**: Imported the dataset using Pandas.
    - **Custom Dataset**: Defined a custom dataset class for PyTorch to handle the tokenization and formatting of text data.
    - **Data Loaders**: Created data loaders for training and validation, splitting the dataset accordingly.
-   - **Constants**: Set constants such as `MAX_LEN` (maximum sequence length) and `BATCH_SIZE`.
+   - **Constants**: Set constants such as MAX_LEN (maximum sequence length) and BATCH_SIZE.
 
 3. **Model Training Setup**:
    - **Model Loading**: Loaded the BERT model with a classification head.
@@ -1449,7 +1449,7 @@ This notebook provided an in-depth exploration of masked modeling with BERT, cov
 **Approach**:
 
 1. **Setup and Initialization**:
-   - **Libraries**: Utilized the `transformers`, `torch`, and `accelerate` libraries for model training and evaluation.
+   - **Libraries**: Utilized the transformers, torch, and accelerate libraries for model training and evaluation.
    - **Dataset**: Loaded the BBC text dataset from Kaggle.
 
 2. **Data Preparation**:
@@ -1457,12 +1457,12 @@ This notebook provided an in-depth exploration of masked modeling with BERT, cov
    - **Tokenization**: Tokenized the text data using the DistilBERT tokenizer.
 
 3. **Model Definition**:
-   - **DistilBERT**: Used the `distilbert-base-uncased` model for text classification.
+   - **DistilBERT**: Used the distilbert-base-uncased model for text classification.
    - **Data Class**: Created a custom data class to handle the tokenized data.
 
 4. **Training Setup**:
-   - **TrainingArguments**: Configured training parameters using `TrainingArguments()`.
-   - **Trainer**: Employed the `Trainer()` class to manage the training process.
+   - **TrainingArguments**: Configured training parameters using TrainingArguments().
+   - **Trainer**: Employed the Trainer() class to manage the training process.
 
 5. **Training and Evaluation**:
    - **Training**: Fine-tuned the DistilBERT model on the training set.
@@ -1490,7 +1490,7 @@ This notebook provided an in-depth exploration of masked modeling with BERT, cov
 
 2. **Web Application Development**:
    - **R Shiny UI**: Designed a user interface with R Shiny to allow users to input text and view classification results.
-   - **API Integration**: Utilized the `httr` library in R to make requests to the FastAPI endpoint from the Shiny app. This integration enables real-time interaction with the model.
+   - **API Integration**: Utilized the httr library in R to make requests to the FastAPI endpoint from the Shiny app. This integration enables real-time interaction with the model.
 
 3. **Workflow**:
    - **Text Input**: Users input text into the Shiny web app.
@@ -1513,8 +1513,8 @@ This notebook provided an in-depth exploration of masked modeling with BERT, cov
    - **Closed-Domain**: Answer questions from a specific, predefined set of documents.
 
 2. **QA with BERT**:
-   - **Model and Tokenizer**: Imported `BertForQuestionAnswering` from the `transformers` library.
-   - **Initialization**: Used `bert-large-uncased-whole-word-masking-finetuned-squad` model.
+   - **Model and Tokenizer**: Imported BertForQuestionAnswering from the transformers library.
+   - **Initialization**: Used bert-large-uncased-whole-word-masking-finetuned-squad model.
    - **Example Setup**:
      - Created a sample question.
      - Provided reference text from which the answer will be extracted.
@@ -1582,21 +1582,21 @@ This notebook provided an in-depth exploration of masked modeling with BERT, cov
 
  **PDF Loading and Text Splitting**
 
-- **PDF Loader**: The `PyPDFLoader` is used to load the PDF document of the Constitution of Bangladesh.
-- **Text Splitter**: The text is split into manageable chunks using the `CharacterTextSplitter` to facilitate efficient embedding and retrieval.
+- **PDF Loader**: The PyPDFLoader is used to load the PDF document of the Constitution of Bangladesh.
+- **Text Splitter**: The text is split into manageable chunks using the CharacterTextSplitter to facilitate efficient embedding and retrieval.
 
 **Embeddings and Vector Database**
 
-- **Embeddings**: The `HuggingfaceEmbeddings` are used to convert text chunks into vector representations.
-- **Vector Database**: `FAISS` (Facebook AI Similarity Search) is employed to store and retrieve these vector embeddings, allowing for efficient search and retrieval of relevant text chunks.
+- **Embeddings**: The HuggingfaceEmbeddings are used to convert text chunks into vector representations.
+- **Vector Database**: FAISS (Facebook AI Similarity Search) is employed to store and retrieve these vector embeddings, allowing for efficient search and retrieval of relevant text chunks.
 
 **Language Model**
 
-- **LLM Model**: The `gemini-1.5-flash` model is used for generating responses based on the retrieved information from the vector database.
+- **LLM Model**: The gemini-1.5-flash model is used for generating responses based on the retrieved information from the vector database.
 
 **User Interface**
 
-- **Streamlit**: The user interface is built with Streamlit, providing an easy-to-use web interface where users can input their questions. The retrieved information is then displayed using `st.markdown()` for formatted text output.                        
+- **Streamlit**: The user interface is built with Streamlit, providing an easy-to-use web interface where users can input their questions. The retrieved information is then displayed using st.markdown() for formatted text output.                        
            
             """)
              st.write("---")
@@ -1611,21 +1611,21 @@ This notebook provided an in-depth exploration of masked modeling with BERT, cov
 
 **YouTube Loading and Text Processing**
 
-- **YouTube Loader**: The `YouTube Loader` from LangChain is used to load the transcripts of YouTube videos related to student protests in Bangladesh.
+- **YouTube Loader**: The YouTube Loader from LangChain is used to load the transcripts of YouTube videos related to student protests in Bangladesh.
 - **Text Processing**: The text from the transcripts is processed to facilitate efficient embedding and retrieval.
 
 **Embeddings and Vector Database**
 
-- **Embeddings**: The `HuggingfaceEmbeddings` are used to convert text chunks into vector representations using the model `hkunlp/instructor-large`.
-- **Vector Database**: `FAISS` (Facebook AI Similarity Search) is employed to store and retrieve these vector embeddings, allowing for efficient search and retrieval of relevant text chunks.
+- **Embeddings**: The HuggingfaceEmbeddings are used to convert text chunks into vector representations using the model hkunlp/instructor-large.
+- **Vector Database**: FAISS (Facebook AI Similarity Search) is employed to store and retrieve these vector embeddings, allowing for efficient search and retrieval of relevant text chunks.
 
 **Language Model**
 
-- **LLM Model**: The `gemma-9bit-it` model is used for generating responses based on the retrieved information from the vector database.
+- **LLM Model**: The gemma-9bit-it model is used for generating responses based on the retrieved information from the vector database.
 
 **User Interface**
 
-- **Streamlit**: The user interface is built with Streamlit, providing an easy-to-use web interface where users can input their queries. The retrieved information is then displayed using `st.markdown()` for formatted text output.
+- **Streamlit**: The user interface is built with Streamlit, providing an easy-to-use web interface where users can input their queries. The retrieved information is then displayed using st.markdown() for formatted text output.
 
 **Key Features:**
 
@@ -1639,20 +1639,20 @@ This notebook provided an in-depth exploration of masked modeling with BERT, cov
              project_overview("3. **Scraping Youtube Comment and Perform Sentiment Analysis with Open Source LLM** ",
                                  r"Youtube Comment Sentiment analysis.mp4",
                                  
-                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                "[Github Link](https://github.com/Kamruzzamansust/Youtube-Comment-Sentiment-Analysis)",
                                 """
-            In this project, I leverage the `jamba-instruct` model from AI21 Labs to perform sentiment analysis on YouTube comments. The project involves several key steps:
+     **Introduction** In this project, I leverage the jamba-instruct model from AI21 Labs to perform sentiment analysis on YouTube comments. The project involves several key steps:
 
 **Steps Involved**
 
 1. **Scraping YouTube Comments**
-I use `Google App Script` within a Google Sheet to scrape comments from a specific YouTube video. This script allows me to efficiently gather and store the comments directly in a Google Sheet.
+I use Google App Script within a Google Sheet to scrape comments from a specific YouTube video. This script allows me to efficiently gather and store the comments directly in a Google Sheet.
 
 2. **Loading Comments for Analysis**
 Once the comments are scraped and stored in the Google Sheet, I extract them for further processing. This step involves reading the data from the Google Sheet to prepare it for sentiment analysis.
 
-3. **Sentiment Analysis with AI21's `jamba-instruct` Model**
-I utilize AI21 Labs' `jamba-instruct` model, an open-source large language model, to perform sentiment analysis on the extracted comments. The `jamba-instruct` model helps classify the sentiment of each comment, determining whether it is positive, negative, or neutral.
+3. **Sentiment Analysis with AI21's jamba-instruct Model**
+I utilize AI21 Labs' jamba-instruct model, an open-source large language model, to perform sentiment analysis on the extracted comments. The jamba-instruct model helps classify the sentiment of each comment, determining whether it is positive, negative, or neutral.
 
 **Conclusion**
 By combining the power of Google App Script for data scraping and AI21's advanced language model for sentiment analysis, this project effectively analyzes the sentiment of YouTube comments, providing valuable insights into viewers' reactions.                        
@@ -1662,36 +1662,80 @@ By combining the power of Google App Script for data scraping and AI21's advance
              project_overview("4. **Movie Recommendation using Large Language Model and Langchain** ",
                                  r"Movie_llm.mp4",
                                  
-                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                "[Github Link](https://github.com/Kamruzzamansust/Movie-Recommendation-With-LLM)",
                                 """
-                                    
+    **Introduction**This Streamlit web application allows users to search for movies across different genres using large language models (LLMs) from Cohere and AI21 Labs. The app combines advanced natural language processing capabilities to provide an intuitive and efficient movie search experience.
+
+**Features**
+
+1. **Search Movies by Genre**
+   - Users can search for movies by specifying different genres. The application uses LLMs to understand and process the search queries, providing accurate and relevant movie recommendations.
+
+2. **Cohere Integration**
+   - The app utilizes Cohere's language models to enhance search functionality, understand user queries, and provide contextually appropriate results.
+
+3. **AI21 Labs Integration**
+   - AI21 Labs' models are used to further refine search results and ensure high-quality recommendations based on user preferences.
+                        
            
             """)
-             st.write("---")
-             project_overview("5. **Chat with pdf Gemini LLM** ",
-                                 r"Chat_with_pdf_gemini.mp4",
+            #  st.write("---")
+            #  project_overview("5. **Chat with pdf Gemini LLM** ",
+            #                      r"Chat_with_pdf_gemini.mp4",
                                  
-                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
-                                """
+            #                     "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+            #                     """
                                     
            
-            """)
+            # """)
              st.write("---")
              project_overview("6. **Fine Tune BERT for Custom Dataset** ",
                                  r"fine tune-1.mp4",
                                  
-                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                "[Github Link](https://github.com/Kamruzzamansust/Fine-tune-on-Turkish-Datset-/blob/main/model.py)",
                                 """
-                                    
+      Introduction : In this project, I fine-tuned a BERT model for text classification using Turkish newspaper data. The goal is to categorize news articles into different labels such as Culture, Economy, Sports, and more.
+
+ **Overview**
+
+The project involves training a BERT model to classify Turkish news articles into predefined categories. By leveraging the transformers library, the model is fine-tuned to understand and predict the content of the news articles accurately.
+
+ Data
+
+- **Dataset**: Turkish newspaper articles.
+- **Labels**: Categories include Business, Economy, Sports, politics  and other relevant topics.                        
            
             """)
              st.write("---")
              project_overview("6. **Serach relevent Information from Faiss Vectore Databse** ",
                                  r"FIASSINDEXSEARCH.mp4",
                                  
-                                "[Github Link](https://github.com/Kamruzzamansust/bd-con-rag)",
+                                "[Github Link](https://github.com/Kamruzzamansust/FAISS-INDEX-SEARCH)",
                                 """
-                                    
+      Introduction : This Streamlit web application allows users to search for relevant information from a collection of Power BI DAX books in PDF format. The application processes PDF data, splits it into manageable chunks, generates embeddings using the all-MiniLM-L6-v2 model, and enables efficient information retrieval with FAISS.
+
+**Overview
+
+The web application leverages state-of-the-art techniques in natural language processing to provide fast and accurate search capabilities. By integrating FAISS for vector storage and retrieval, users can find relevant information efficiently from a large collection of PDFs.
+
+Features
+
+1. **Data Loading and Preparation**
+   - **Load PDF Data**: Import Power BI DAX books in PDF format.
+   - **Extract Text**: Extract text content from the PDF files.
+   - **Text Splitting**: Split the extracted text into smaller chunks to facilitate better search and retrieval performance.
+
+2. **Generating Embeddings**
+   - **Embedding Model**: Use the all-MiniLM-L6-v2 model from Hugging Face for generating text embeddings.
+   - 
+3. **FAISS Vector Store**
+   - **Indexing**: Store the generated embeddings in a FAISS vector store for efficient similarity search.
+   - **Search Functionality**: Allow users to input queries and retrieve relevant information from the FAISS vector store based on cosine similarity of the embeddings.
+
+4. **Streamlit Interface**
+   - **User Input**: Provide an input box for users to enter their search queries.
+   - **Display Results**: Show the most relevant information retrieved from the FAISS vector store.
+                           
            
             """)
 
@@ -1914,7 +1958,7 @@ if selected == "Contact":
         st.write(":house: House no -11 , Road No -7 , Mirpur, Dhaka,Bangladesh")
         st.write(":phone: XXXXXXXXXXX")
         st.write(":globe_with_meridians: linked In Profile: https://www.linkedin.com/in/md-kamruzzaman-57a60925a/ ")
-
+        st.write(":email: kamruzzaman.sust15@gmail.com")
 
 if selected == "Get in Touch !!":
     #st.title("Get in Touch !!")
@@ -1922,9 +1966,9 @@ if selected == "Get in Touch !!":
     container_style = """
     <style>
     .custom-container {
-        border: 2px solid #4CAF50;
+        border: 3px solid grey;
         padding: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     </style>
     """
@@ -1942,7 +1986,7 @@ if selected == "Get in Touch !!":
     """
 
     st.markdown(container_style, unsafe_allow_html=True)
-    left_col, right_col = st.columns((2, 1))
+    left_col, right_col = st.columns((2, .9))
     with left_col:
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_col:
