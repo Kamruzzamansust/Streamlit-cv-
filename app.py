@@ -369,6 +369,9 @@ In this project, I connected Power BI with a PostgreSQL database to analyze the 
 - **Materialized Views**
 
 ## Stored Procedures
+## Database Normalization
+## ACID property
+
 This is my overall SQL journey.
 
 
