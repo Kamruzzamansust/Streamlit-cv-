@@ -117,7 +117,7 @@ if selected == "About":
                          
                  - Statistics
                          
-                 - Shahlal University of Science and Technology 
+                 - Shahjalal University of Science and Technology 
                                             
                  - CGPA : 3.16
                          
