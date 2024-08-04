@@ -439,20 +439,43 @@ This is my overall SQL journey.
   - Feature scaling: Min-max scaling, Z-normalization
 - **Feature Construction and Selection**:
   - Techniques: Correlation coefficient, chi-square test, information gain
-- **Feature Extraction**:
+- **Feature Extraction and Dimensionality Reduction**:
   - Methods: PCA, LDA, t-SNE
 
-#### Understanding ML Algorithms (Supervise Machine Laearning )
-- **Regression**:
-  - Simple Linear, Multiple Linear, and polynomial regression
-  - SV Regression , RF , BAGGING , BOOSTing Algorithms
-  - Regularization techniques: Lasso, ridge regression
-  - Gradient descent for finding global minima
-- **Classification**:
-  - Algorithms: Logistic Regression ,SVM classifier with kernel tricks, KNN, Naive Bayes
-  - Decision Trees: Information gain and entropy
-  - Importance of decision trees in ensemble methods: Random forest, bagging, stacking, boosting
-  - Weak learners in boosting algorithms
+## Supervised Learning
+
+### Regression
+- Simple Linear Regression
+- Multiple Linear Regression
+- Polynomial Regression
+- Support Vector Regression (SVR)
+- Random Forest (RF)
+- Bagging
+- Boosting Algorithms
+- Regularization Techniques: Lasso, Ridge Regression
+- Gradient Descent for Finding Global Minima
+
+### Classification
+- Logistic Regression
+- SVM Classifier with Kernel Tricks
+- K-Nearest Neighbors (KNN)
+- Naive Bayes
+- Decision Trees: Information Gain and Entropy
+- Importance of Decision Trees in Ensemble Methods: Random Forest, Bagging, Stacking, Boosting with different Types(Xgboost, Catboost, LightGBM....)
+- Weak Learners in Boosting Algorithms
+
+## Unsupervised Learning
+- K-Means Clustering
+- Hierarchical Clustering
+- Principal Component Analysis (PCA)
+- t-Distributed Stochastic Neighbor Embedding (t-SNE)
+- DBSCAN
+- Linear Discriminant Analysis (LDA)
+
+## Outlier Detection (ML Techniques)
+- Robust Z-Score Method (Statistical Way)
+- Isolation Forest
+- Local Outlier Factor (LOF)
 
 #### Hyperparameter Tuning and Validation
 - Explored hyperparameters associated with various algorithms
