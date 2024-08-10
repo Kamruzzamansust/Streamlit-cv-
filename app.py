@@ -502,13 +502,32 @@ This is my overall SQL journey.
         #st.write("**<<Machhine Learning Projects>>**")
         st.write("**<<Machine Learning Projects>>**")
         with st.container(border = True):
+              project_overview("**1. Ml Model Packaging**",
+                               "ml_model_pacakging.mp4",
+                               "[GitHub link](https://github.com/Kamruzzamansust/Food_Delivery_Status_with_XGBOOST_and_Streamlit)",
+                               """
+        ##### Project Description
+
+This project focuses on creating a modular and scalable machine learning package for the Titanic dataset, following software engineering best practices. Key components include:
+
+- **Project Structure:** Designed the project with a modular structure, adhering to software engineering principles. The project is organized into different modules, including data processing, feature engineering, model training, and evaluation.
+
+- **Titanic Dataset:** Utilized the Titanic dataset to demonstrate the application of the package. The dataset is used to train and evaluate various machine learning models for predicting survival.
+
+- **Modular Coding:** Implemented modular coding techniques, where each functionality is encapsulated within its own module, ensuring code reusability, maintainability, and scalability.
+
+- **Package Development:** Developed the entire project as a Python package, making it easy to install and use across different environments. The package is designed to be installed via `pip`, allowing other users to leverage the functionality with minimal setup.
+
+- **Model Packaging:** Packaged the machine learning models and the entire workflow, enabling users to easily train, evaluate, and deploy models using the provided API.
+        """)
+              
               
              
               with st.container(border = True):
                 col1, col2 = st.columns(2,gap = 'large')
                 with col1:
                     
-                    st.write("**1. Food Delivery Status Classification with Xg BOOST and Streamlit** ")
+                    st.write("**2. Food Delivery Status Classification with Xg BOOST and Streamlit** ")
                     #st.write("----")
                     st.video(r"Food.mp4")
                     st.write("---")
@@ -520,7 +539,7 @@ This is my overall SQL journey.
                 with col2:
                     
                     st.markdown("""
-        ## Project Description
+         ##### Project Description
 
 In this project, I developed a classification model using XGBoost to predict food delivery statuses. Key components include:
 
