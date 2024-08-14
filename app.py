@@ -1270,7 +1270,8 @@ In this stage of my NLP journey, I've explored the following concepts:
 #### My NLP Journey: --------->>> stage 5
 
 ## LangChain Exploration
-- **Model Input/Output**: 
+------------------------                         
+## Model Input/Output 
   - Learned about prompts and their types.
   - Explored different models like LLMs and chat models.
 
