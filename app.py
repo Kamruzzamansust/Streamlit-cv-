@@ -171,24 +171,24 @@ elif selected == "Projects":
     
     if selected2 == "Power Bi":
             markdown_writting("**:blue-background[Click to See My Overall  Power BI journey]**","""
-### My Power BI Journey
+ My Power BI Journey
 
 I divided my learning into three phases:
 
-#### 1. Data Modeling
+# 1. Data Modeling
 - Learned about dimensions and fact tables
 - Explored star, snowflake, and galaxy schemas
 - Understood role-playing dimensions and the importance of a date table
 - Learned about cardinality
 - Learned About Granularity 
 
-#### 2. ETL through Power Query
+# 2. ETL through Power Query
 - Loaded data from various sources like Excel, CSV, and databases
 - Performed data cleaning using built-in Power Query functions
 - Explored duplicates and references in Power Query
 - Focused on using built-in functionality without M script
 
-#### 3. Data Analysis with DAX
+# 3. Data Analysis with DAX
 - Learned about DAX functions, including table and relation functions
 - Explored calculated columns and measures
 - Understood how filters propagate
@@ -221,7 +221,7 @@ I divided my learning into three phases:
                     
                     
                      st.markdown("""
-       #### Project Description
+       # Project Description
 
 In this project, I aimed to analyze customer data using DAX and measures. The objectives were as follows:
 
@@ -251,7 +251,7 @@ This analysis was conducted using DAX, providing insights into customer demograp
                 with col2:
                     
                     st.markdown("""
-        #### Project Description
+        # Project Description
 
 In this project, I aimed to analyze patient trends and generate insights:
 
@@ -282,7 +282,7 @@ In this project, I aimed to analyze patient trends and generate insights:
                     
                     st.markdown("""
                                 
-        #### Project Description                        
+        # Project Description                        
 This dashboard provides insights into transportation operations using DAX measures. Key features include:
 
 - **Busiest and Least Busy Routes:** Identify the most and least traveled routes.
@@ -311,7 +311,7 @@ To achieve these insights, I used DAX functions such as CALCULATE(), SUMMARIZE()
                     
                     st.markdown("""
         
-                                #### Project Description
+                                # Project Description
 
         
 
@@ -392,7 +392,7 @@ This is my overall SQL journey.
                     st.write('---')
             with st.container(border = True):
                 st.markdown("""
-            ##### Project Description
+            ## Project Description
 
             I used DVD rental database Using Postgresql to create a SQL script to analyze the data. Key features:
 
@@ -423,16 +423,16 @@ This is my overall SQL journey.
 
     elif selected2 == "ML":
         markdown_writting("**:blue-background[Click to See  My Overall  Machine Learning journey]**","""
-        ### My Machine Learning Journey
+         My Machine Learning Journey
 
-#### Data Cleaning and Visualization
+# Data Cleaning and Visualization
 - Learned data cleaning techniques with Pandas and NumPy
 - Used Matplotlib and Seaborn for data visualization
   - **Univariate Analysis**: Count plot, pie plot, histogram, distplot, box plot
   - **Bivariate Analysis**: Scatter plot, bar plot, box plot, heatmap, pairplot, line plot
   - **Multivariate Analysis**: Explored complex relationships between features
 
-#### Feature Engineering
+# Feature Engineering
 - **Feature Transformation**:
   - Missing value handling: Mean, median, mode imputation, KNN imputation, regression imputation
   - Handling categorical values and outlier detection
@@ -444,7 +444,7 @@ This is my overall SQL journey.
 
 ## Supervised Learning
 
-### Regression
+ Regression
 - Simple Linear Regression
 - Multiple Linear Regression
 - Polynomial Regression
@@ -455,7 +455,7 @@ This is my overall SQL journey.
 - Regularization Techniques: Lasso, Ridge Regression
 - Gradient Descent for Finding Global Minima
 
-### Classification
+ Classification
 - Logistic Regression
 - SVM Classifier with Kernel Tricks
 - K-Nearest Neighbors (KNN)
@@ -464,7 +464,7 @@ This is my overall SQL journey.
 - Importance of Decision Trees in Ensemble Methods: Random Forest, Bagging, Stacking, Boosting with different Types(Xgboost, Catboost, LightGBM....)
 - Weak Learners in Boosting Algorithms
 
-#### Unsupervised Learning
+# Unsupervised Learning
 - K-Means Clustering
 - Hierarchical Clustering
 - Principal Component Analysis (PCA)
@@ -472,18 +472,18 @@ This is my overall SQL journey.
 - DBSCAN
 - Linear Discriminant Analysis (LDA)
 
-#### Outlier Detection (ML Techniques)
+# Outlier Detection (ML Techniques)
 - Robust Z-Score Method (Statistical Way)
 - Isolation Forest
 - Local Outlier Factor (LOF)
 
-#### Hyperparameter Tuning and Validation
+# Hyperparameter Tuning and Validation
 - Explored hyperparameters associated with various algorithms
 - Validation methods:
   - Cross-validation and K-fold techniques
   - Validation metrics: RMSE, MSE for regression, confusion matrix ,AUC for classification
 
-#### Clustering (Unsuporvised Machine Learning)
+# Clustering (Unsuporvised Machine Learning)
 - K Means , Kmeans ++
 - Hierarchical clustering
 - DBSCAN and HDBSCAN clustering - helpful for non linear clustering
@@ -491,7 +491,7 @@ This is my overall SQL journey.
 **Performance matrics for Clustering**
    - silhoutte Score                                                                           
 
-#### Additional Concepts
+# Additional Concepts
 
 - How distrbution changes over Time which is known as concept drift 
                           
@@ -506,7 +506,7 @@ This is my overall SQL journey.
                                "ml_model_pacakging.mp4",
                                "[GitHub link](https://github.com/Kamruzzamansust/Food_Delivery_Status_with_XGBOOST_and_Streamlit)",
                                """
-        ##### Project Description
+        ## Project Description
 
 This project focuses on creating a modular and scalable machine learning package for the Titanic dataset, following software engineering best practices. Key components include:
 
@@ -539,7 +539,7 @@ This project focuses on creating a modular and scalable machine learning package
                 with col2:
                     
                     st.markdown("""
-         ##### Project Description
+         ## Project Description
 
 In this project, I developed a classification model using XGBoost to predict food delivery statuses. Key components include:
 
@@ -566,7 +566,7 @@ In this project, I developed a classification model using XGBoost to predict foo
                  with col2:
                     
                     st.markdown("""
-        ##### Project Description
+        ## Project Description
 
         
 This project involves advanced customer segmentation techniques. Key components include:
@@ -593,7 +593,7 @@ This project involves advanced customer segmentation techniques. Key components 
                  with col2:
                     
                     st.markdown("""
-        ##### Project Description
+        ## Project Description
 
 In this project, I performed customer churn analysis using logistic regression. Key aspects include:
 
@@ -620,7 +620,7 @@ In this project, I performed customer churn analysis using logistic regression. 
                         with col2:
                             
                             st.markdown("""
-                ##### Project Description
+                ## Project Description
 
                 
 In this project, I focused on analyzing Customer Lifetime Value (CLV) with the following steps:
@@ -650,7 +650,7 @@ In this project, I focused on analyzing Customer Lifetime Value (CLV) with the f
                             with col2:
                                         
                                         st.markdown("""
-                            ##### Project Description
+                            ## Project Description
 
 In this Implement a regression model to predict outcomes based on input features.
 
@@ -693,7 +693,7 @@ In this Implement a regression model to predict outcomes based on input features
                             with col2:
                                         
                                         st.markdown("""
-                            ##### Project Description
+                            ## Project Description
 
 **Objective**: Perform market basket analysis to identify patterns in transactional data and uncover associations between items.
 
@@ -733,7 +733,7 @@ In this Implement a regression model to predict outcomes based on input features
                             with col2:
                                         
                                         st.markdown("""
-                            ##### Project Description
+                            ## Project Description
 
    - **Objective**: Utilize the Apriori algorithm to recommend coffee products based on associations found in transactional data.
    - **Application**:
@@ -755,9 +755,9 @@ In this Implement a regression model to predict outcomes based on input features
 
     elif selected2 == "Tensorflow":
         markdown_writting("**:blue-background[Click to See  My Overall  Deep Learning journey With Tensorflow]**",'''
-        ### My Deep Learning Journey with TensorFlow
+         My Deep Learning Journey with TensorFlow
 
-#### Learning Deep Learning Fundamentals
+# Learning Deep Learning Fundamentals
 - **Types of Neural Networks**:
   - Explored various architectures and their applications
 - **Perceptron and MLP**:
@@ -771,7 +771,7 @@ In this Implement a regression model to predict outcomes based on input features
   - Learned how it optimizes the model
   - **Vanishing Gradient Problem**: Identified issues with deep networks and explored solutions
 
-#### Improving Model Performance
+# Improving Model Performance
 - **Techniques**:
   - Early stopping, data scaling, dropout layers, and regularization
 - **Activation Functions**:
@@ -783,7 +783,7 @@ In this Implement a regression model to predict outcomes based on input features
 - **Optimizers**:
   - Studied optimizers and their relation to gradient descent
 
-#### Applying with TensorFlow
+# Applying with TensorFlow
 - Began implementing these concepts using TensorFlow for practical applications
 
 This journey has deepened my understanding of deep learning and equipped me with the skills to use TensorFlow effectively.
@@ -804,7 +804,7 @@ This journey has deepened my understanding of deep learning and equipped me with
                     st.write('---')
             with st.container(border = True):
                 st.markdown("""
-            ##### Project Description
+            ## Project Description
 
 **Objective**: Implement comprehensive workflows for building and training deep learning models using TensorFlow.
 
@@ -835,9 +835,9 @@ This journey has deepened my understanding of deep learning and equipped me with
                         
     elif selected2 == "R-Shiny":
         markdown_writting("**:blue-background[Click to See  My Overall  R shiny Journey]**","""
-        ### My R and R Shiny Journey
+         My R and R Shiny Journey
 
-#### Learning R
+# Learning R
 - **Data Manipulation**: 
   - Used dplyr and tidyverse for efficient data manipulation
 - **Handling Variables**:
@@ -847,7 +847,7 @@ This journey has deepened my understanding of deep learning and equipped me with
 - **Data Visualization**:
   - Created plots using ggplot2 for basic visualizations
 
-#### Exploring R Shiny
+# Exploring R Shiny
 - **UI Components**:
   - Learned about various UI inputs and outputs
 - **Reactivity**:
@@ -857,7 +857,7 @@ This journey has deepened my understanding of deep learning and equipped me with
   - Started building simple interactive applications
   - Experimented with layout and design for better user experience
 
-#### Enhancing Shiny Apps
+# Enhancing Shiny Apps
 - **Shiny Dashboard**:
   - Learning to use the shinydashboard package for structured dashboards
 - **Styling**:
@@ -926,7 +926,7 @@ This journey has equipped me with foundational skills in R and R Shiny, setting 
                  with col2:
                     
                     st.markdown("""
-        ##### Project Description
+        ## Project Description
 
 1. **Dashboard Features**:
    - **Movie Listings**: Users can browse through a list of movies.
@@ -949,7 +949,7 @@ This journey has equipped me with foundational skills in R and R Shiny, setting 
                                r"Sales_dashbord_R shiny.mp4",
                                "[GitHub link](https://github.com/Kamruzzamansust/AW-SALES_POWERBI)",
                                """
-                               ##### Project Description
+                               ## Project Description
 
 1. **Technology Stack**:
    - **R and Shiny**: For building the dashboard.
@@ -989,12 +989,12 @@ This journey has equipped me with foundational skills in R and R Shiny, setting 
 
     elif selected2 == "DASH": 
         markdown_writting("**:blue-background[Click to See  My Overall  Plotly dash Journey]**","""
-        ### My Plotly Dash Journey
+         My Plotly Dash Journey
 
-#### Dashboard Layout
+# Dashboard Layout
 - Learned how to create and organize dashboards using Dash
 
-#### Plotly Graphs
+# Plotly Graphs
 - Explored various types of plots using Plotly:
   - Line charts
   - Bar charts
@@ -1003,7 +1003,7 @@ This journey has equipped me with foundational skills in R and R Shiny, setting 
   - Heatmaps
   - More advanced visualizations
 
-#### Callbacks
+# Callbacks
 - Implemented basic callbacks to make dashboards interactive
 - Used callbacks to update graphs dynamically based on user input
 
@@ -1034,7 +1034,7 @@ This journey helped me create interactive and visually appealing dashboards with
                 with col2:
                     
                     st.markdown("""
-        ##### Project Description
+        ## Project Description
 **Objective**: Develop a multipage dashboard to visualize and analyze various statistics related to IPL matches, including individual performance metrics for batsmen and bowlers.
 
 **Approach**:
@@ -1072,7 +1072,7 @@ This journey helped me create interactive and visually appealing dashboards with
                 with col2:
                     
                     st.markdown("""
-        ##### Project Description
+        ## Project Description
 
 **Objective**: Develop a multipage dashboard to analyze sales data from Adventure Works, providing dynamic insights and interactive exploration.
 
@@ -1113,7 +1113,7 @@ This journey helped me create interactive and visually appealing dashboards with
                     
                     st.markdown("""
                                 
-        #### Project Description
+        # Project Description
 
 **Objective**: Build a multipage dashboard to analyze YouTube data, highlighting trends and patterns with interactive elements.
 
@@ -1139,16 +1139,16 @@ This journey helped me create interactive and visually appealing dashboards with
 
     elif selected2 == "NLP": 
         markdown_writting("**:blue-background[Click to See  My Overall NLP journey]**",'''
-        ### My NLP Journey: --------->>> stage 1 
-#### Text Preprocessing
+         My NLP Journey: --------->>> stage 1 
+# Text Preprocessing
 
-#### Introduction to NLP Concepts
+# Introduction to NLP Concepts
 - **Key Terms**:
   - **Corpus**: Collection of texts used for analysis
   - **Vocabulary**: Set of unique words in a corpus
   - **Documents and Words**: Basic units of text analysis
 
-#### Text Preprocessing Techniques
+# Text Preprocessing Techniques
 - **Tokenization**:
   - Splitting text into individual words or sentences using NLTK and SpaCy
 - **Stemming and Lemmatization**:
@@ -1165,22 +1165,22 @@ This journey helped me create interactive and visually appealing dashboards with
 - **Sentence Boundary Detection**:
   - Identifying sentence beginnings and endings
 
-#### Additional Preprocessing Techniques
+# Additional Preprocessing Techniques
 - **Lowercasing**:
   - Converting all text to lowercase for uniformity
 - **Punctuation Removal**:
   - Stripping punctuation to focus on words
 - **Normalization**:
   - Converting text to a consistent format, e.g., numbers or dates
-### Text to Vector
+ Text to Vector
 
-#### Text Vectorization Techniques
+# Text Vectorization Techniques
 - **Basic Text Vectorization**:
   - **Bag of Words**: Represents text by word frequency
   - **TF-IDF**: Considers word importance across documents
   - **Word Embeddings**: Dense vector representations
 
-#### Types of Word Embeddings
+# Types of Word Embeddings
 - **Count or Frequency Based Embeddings**:
   - **One Hot Encoding**: Binary vectors for word presence
   - **Bag of Words**: Simple word count
@@ -1193,7 +1193,7 @@ This journey helped me create interactive and visually appealing dashboards with
   - **ELMo**: Contextualized word representations
   - **Doc2Vec**: Extends Word2Vec for entire documents
 -----------------------------------------------------------------------------------------------------                          
-#### My NLP Journey: --------->>> stage 2
+# My NLP Journey: --------->>> stage 2
 In this stage of my NLP journey, I've explored the following concepts:
 
 ## Recurrent Neural Networks (RNN)
@@ -1223,7 +1223,7 @@ In this stage of my NLP journey, I've explored the following concepts:
 - **LSTMs** enhance memory handling for improved accuracy.
 - **GRUs** offer a streamlined alternative without sacrificing performance.                          
 -----------------------------------------------------------
-#### My NLP Journey: --------->>> stage 3
+# My NLP Journey: --------->>> stage 3
 
 ## Sequence-to-Sequence (seq2seq) Models
 - Explored how **encoder-decoder** structures form the basis of seq2seq models.
@@ -1242,12 +1242,12 @@ In this stage of my NLP journey, I've explored the following concepts:
   - **Layer Normalization**: Improves training stability.
 - **Decoder**: Complements the encoder for generating outputs.
 
-### Key Learnings
+ Key Learnings
 - Understanding Transformers has paved the way for exploring **Large Language Models (LLMs)**.
 
 
 ---------------------------------------------------
-#### My NLP Journey: --------->>> stage 4
+# My NLP Journey: --------->>> stage 4
 
 ## Language Modeling
 - Studied **causal language models (CLM)** and **masked language models (MLM)**.
@@ -1267,7 +1267,7 @@ In this stage of my NLP journey, I've explored the following concepts:
 - Used Hugging Face and Tensorflow, Pytorch to implement these models.
 - Completed small projects to gain hands-on experience.    
 ----------------------------------------------------------------------------
-#### My NLP Journey: --------->>> stage 5
+# My NLP Journey: --------->>> stage 5
 
 ## LangChain Exploration
 ------------------------                         
@@ -1287,7 +1287,7 @@ In this stage of my NLP journey, I've explored the following concepts:
 - Understood RAG and its pipeline.
 
 ## Advanced LangChain Concepts
-- Currently exploring **Agents**, **Tools**, and **Toolkits** for advanced applications.
+- Currently exploring **Agents**, **Tools**, and **Toolkits** and Also Langraph for advanced applications.
 ## Advance Fine tuning Methods 
 - Lora/qlora
 - Used unsloth  for faster Fine tuning 
@@ -1784,6 +1784,41 @@ Features
                            
            
             """)
+             st.write("---")
+             project_overview("7. ** Langchain Agent Initialization(DuckDuckgo Search and Arxiv) ** ",
+                                 r"DuckduckgoSearch.mp4",
+                                 
+                                "[Github Link](https://github.com/Kamruzzamansust/search-engine-with-langchain/blob/main/app.py)",
+                                """
+       
+
+Introduction: This Streamlit web application serves as a versatile search engine that allows users to query and retrieve information from multiple sources, including Arxiv, DuckDuckGo, and Wikipedia. By leveraging the capabilities of LangChain and implementing an agent-based approach, the application intelligently determines the most appropriate tool to execute based on the user's query. The result is a seamless and efficient search experience that draws from diverse and authoritative sources.
+
+Overview
+
+The web application utilizes advanced natural language processing techniques, integrating LangChain to dynamically select and run the most suitable tools for a given query. The agent-based design ensures that users can access relevant information from Arxiv, DuckDuckGo, and Wikipedia without needing to specify the source, as the application makes that decision automatically.
+
+ Features
+
+ 1. Tool Integration
+
+- **Arxiv Search**: A dedicated tool for searching academic papers and preprints from the Arxiv repository.
+- **DuckDuckGo Search**: A tool that enables web searches through DuckDuckGo, offering a broad range of search results from the internet.
+- **Wikipedia Search**: A tool specifically designed to retrieve relevant information from Wikipedia, providing concise and comprehensive summaries.
+
+ 2. Agent-Based Query Handling
+- **Intelligent Tool Selection**: The application uses an LLM-powered agent to analyze the user's query and automatically choose the most appropriate tool (Arxiv, DuckDuckGo, or Wikipedia) for retrieving information.
+- **Dynamic Query Execution**: Depending on the selected tool, the agent executes the query and fetches the most relevant results, ensuring an efficient and targeted search process.
+
+ 3. Streamlit Interface
+
+- **User Input**: A clean and simple input box where users can enter their search queries.
+- **Result Display**: The application presents the most relevant information retrieved by the selected tool, ensuring that users receive accurate and useful results.
+- **Interactive Search Experience**: The interface is designed to be user-friendly, providing an intuitive experience for conducting multi-source searches.
+                           
+           
+            """)
+
 
 
 
