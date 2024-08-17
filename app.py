@@ -1785,7 +1785,7 @@ Features
            
             """)
              st.write("---")
-             project_overview("7. ** Langchain Agent Initialization(DuckDuckgo Search and Arxiv) ** ",
+             project_overview("7. **Langchain Agent Initialization(DuckDuckgo Search and Arxiv)** ",
                                  r"DuckduckgoSearch.mp4",
                                  
                                 "[Github Link](https://github.com/Kamruzzamansust/search-engine-with-langchain/blob/main/app.py)",
@@ -1815,6 +1815,81 @@ The web application utilizes advanced natural language processing techniques, in
 - **User Input**: A clean and simple input box where users can enter their search queries.
 - **Result Display**: The application presents the most relevant information retrieved by the selected tool, ensuring that users receive accurate and useful results.
 - **Interactive Search Experience**: The interface is designed to be user-friendly, providing an intuitive experience for conducting multi-source searches.
+                           
+           
+            """)
+             st.write("---")
+             project_overview("8. **Langchain Agent Sql Query Tool** ",
+                                 r"Langchain_agent_sqlite_query_tool.mp4",
+                                 
+                                "[Github Link](https://github.com/Kamruzzamansust/LangChain-Agent-with-SQLite-Query-Tool/blob/main/app.py)",
+                                """
+ Introduction: This Streamlit web application is designed to allow users to interactively query a SQLite database using natural language. By leveraging the power of LangChain, GROQ API, and the Gemma2-9b-It model, the application intelligently processes user queries, retrieves data from the database, and presents the results in an easy-to-understand format.
+
+Overview
+
+The application utilizes state-of-the-art natural language processing techniques and LangChain's SQL Agent to enable users to ask questions about the database in plain language. The underlying model interprets the queries and automatically executes the appropriate SQL commands on the SQLite database, making data retrieval simple and efficient.
+
+ Features
+
+ 1. SQL Agent for SQLite Database
+- **Natural Language Queries**: Users can input questions in plain language, and the SQL Agent converts these into SQL queries to fetch the desired information from the SQLite database.
+- **Gemma2-9b-It Model**: The application uses the Gemma2-9b-It model through the GROQ API to interpret user queries and generate accurate SQL commands.
+- **Efficient Query Execution**: The application processes the generated SQL commands and retrieves results from the SQLite database in real time.
+
+ 2. Memory and Callbacks
+- **Memory Integration**: The application retains context across interactions, allowing users to build on previous queries or reference earlier results within the same session.
+- **Callbacks**: Implemented to enhance the interaction flow, providing real-time feedback and ensuring a smooth and responsive user experience.
+
+ 3. OpenAI Function Calling and Tool Integration
+- **Function Calling**: The application uses OpenAI's function calling capabilities to invoke specific tools and functions based on user queries, enhancing the flexibility and accuracy of responses.
+- **Tool Calling**: Integrated with various tools that the LLM can invoke to fetch or process data, depending on the nature of the query.
+
+ 4. Streamlit Interface
+- **User Input**: A simple input box for users to ask questions about the database.
+- **Result Display**: The application displays the results retrieved from the SQLite database in a clear and concise manner, ensuring users get the information they need quickly.
+- **Interactive and User-Friendly**: Designed to be intuitive, making it easy for users to interact with the database without needing to write SQL queries themselves.
+       
+
+
+           
+            """)
+             st.write("---")
+             project_overview("9. **PDF Summarization with LangChain and Streamlit** ",
+                                 r"pdf_summarizer.mp4",
+                                 
+                                "[Github Link](https://github.com/Kamruzzamansust/PDF-Summarizer-with-Langchain/blob/main/app.py)",
+                                """
+      Introduction : This Streamlit application enables users to upload PDF files and generate concise summaries of the content. It utilizes the LangChain framework, along with the **gemma2-9b-it** model from Groq, to process and summarize large documents. The application is designed to handle complex text, breaking it down into manageable chunks and providing an efficient way to distill key information.
+
+Overview
+
+1. **PDF Upload**
+   - Users can upload any PDF document directly through the app's interface.
+   - The uploaded file is processed and stored temporarily for further processing.
+
+2. **Text Extraction and Chunking**
+   - The app extracts text from the PDF and splits it into smaller sections (chunks) to improve summarization accuracy.
+   - The splitting process ensures that the context is preserved while making the text manageable for the model.
+
+3. **Summarization with LangChain (Map-Reduce Chain)**
+   - The app uses the map-reduce chain type from the LangChain library to summarize each chunk of text.
+   - The **map phase** handles the initial summarization of each chunk, creating concise summaries of smaller sections.
+   - The **reduce phase** then combines these smaller summaries into a coherent and comprehensive final summary.
+   - The **gemma2-9b-it** model from Groq is employed for generating high-quality, coherent summaries.
+
+4. **User Interface**
+   - A simple and intuitive interface allows users to upload PDFs and receive summaries in just a few clicks.
+   - Summarized content is displayed directly on the app, providing immediate value.
+
+How It Works
+
+1. **Upload PDF**: Users upload a PDF file using the file uploader.
+2. **Process the File**: The file is read, and text is extracted and split into chunks.
+3. **Generate Summary**: The LangChain map-reduce summarization chain processes each chunk and combines them into a final summary.
+4. **Display the Summary**: The summarized text is displayed in the app, ready for the user to read.
+
+This application is a powerful tool for anyone needing to quickly understand the contents of large documents, making it particularly useful for researchers, students, and professionals.
                            
            
             """)
