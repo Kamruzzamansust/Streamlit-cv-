@@ -1735,7 +1735,7 @@ By combining the power of Google App Script for data scraping and AI21's advance
            
             # """)
              st.write("---")
-             project_overview("6. **Fine Tune BERT for Custom Dataset** ",
+             project_overview("5. **Fine Tune BERT for Custom Dataset** ",
                                  r"fine tune-1.mp4",
                                  
                                 "[Github Link](https://github.com/Kamruzzamansust/Fine-tune-on-Turkish-Datset-/blob/main/model.py)",
@@ -1753,7 +1753,7 @@ The project involves training a BERT model to classify Turkish news articles int
            
             """)
              st.write("---")
-             project_overview("7. **Serach relevent Information from Faiss Vectore Databse** ",
+             project_overview("6. **Serach relevent Information from Faiss Vectore Databse** ",
                                  r"FIASSINDEXSEARCH.mp4",
                                  
                                 "[Github Link](https://github.com/Kamruzzamansust/FAISS-INDEX-SEARCH)",
@@ -1785,7 +1785,7 @@ Features
            
             """)
              st.write("---")
-             project_overview("8. **Langchain Agent Initialization(DuckDuckgo Search and Arxiv)** ",
+             project_overview("7. **Langchain Agent Initialization(DuckDuckgo Search and Arxiv)** ",
                                  r"DuckduckgoSearch.mp4",
 
 
@@ -1820,7 +1820,7 @@ The web application utilizes advanced natural language processing techniques, in
            
             """)
              st.write("---")
-             project_overview("9. **Langchain Agent Sql Query Tool** ",
+             project_overview("8. **Langchain Agent Sql Query Tool** ",
                                  r"Langchain_agent_sqlite_query_tool.mp4",
                                  
                                 "[Github Link](https://github.com/Kamruzzamansust/LangChain-Agent-with-SQLite-Query-Tool/blob/main/app.py)",
@@ -1856,7 +1856,7 @@ The application utilizes state-of-the-art natural language processing techniques
            
             """)
              st.write("---")
-             project_overview("10. **PDF Summarization with LangChain and Streamlit** ",
+             project_overview("9. **PDF Summarization with LangChain and Streamlit** ",
                                  r"pdf_summarizer.mp4",
                                  
                                 "[Github Link](https://github.com/Kamruzzamansust/PDF-Summarizer-with-Langchain/blob/main/app.py)",
@@ -1895,7 +1895,7 @@ This application is a powerful tool for anyone needing to quickly understand the
            
             """)
              st.write("---")
-             project_overview("11. **PDF Q&A with LangChain & Streamlit_with memory** ",
+             project_overview("10. **PDF Q&A with LangChain & Streamlit_with memory** ",
                                  r"Kamruzzaman_pdf_resume_asking.mp4",
                                  
                                 "[Github Link](https://github.com/Kamruzzamansust/PDF-Q-A-with-LangChain-Streamlit_with-chat-history/blob/main/app.py)",
